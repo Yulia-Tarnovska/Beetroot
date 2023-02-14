@@ -1,0 +1,31 @@
+.myResume {
+  padding: 15px 250px;
+}
+
+
+.myResume .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .header-title {
+  text-align: center;
+  font-family: serif;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.header .header-info img {
+ width: 250px;
+}
+
+.main-info {
+  font-size: 16px;
+  padding: 60px 30px;
+}
+
+h4 {
+  font-size: 25px;
+  padding: 5px 0;
+}
