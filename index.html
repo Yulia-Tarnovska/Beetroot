@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+  <link href="./style.css" rel="stylesheet">
+  
+  <title>Forms</title>
+</head>
+<header>
+  <h2>Registration Form</h2>
+</header>
+
+<body>
+
+  <main>
+    <form action="/action_page.php" method="get" target="_blank">
+      <section register_info>
+        <div class="field_wrapper">
+          <label for="full_name">Повне ім'я</label>
+          <input type="text" id="full_name" name="full_name" min="3" max="50" required><br>
+        </div>
+        <div class="field_wrapper">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required><br>
+        </div>
+      </section>
+
+      <section general_info>
+        <div class="field_wrapper">
+          <label for="password">Пароль</label>
+          <input type="password" id="password" name="password" min="3" max="10" required><br>
+        </div>
+
+        <div class="field_wrapper">
+          <label for="password_again">Пароль ще раз</label>
+          <input type="password" id="password_again" name="password_again" required><br>
+        </div>
+
+        <div class="field_wrapper">
+          Стать
+          <div>
+          <label for="man">чоловіча</label>
+          <input type="radio" id="man" name="gender" value="чоловіча" checked required>
+          </div>
+
+        <div>
+            <label for="woman">жіноча</label>
+            <input type="radio" id="woman" name="gender" value="жіноча" required>
+          </div>
+        </div>   
+          <div class="field_wrapper">
+            <label for="age">Вік</label>
+            <input type="number" id="age" name="age" required>
+          </div>
+
+          <div class="field_wrapper">
+            <label for="course">Курс</label>
+            <select id="course" name="course" required>
+              <option value="" disabled selected>Виберіть курс</option>
+              <option value="Front-End">Front-End</option>
+              <option value="Back-End">Back-End</option>
+              <option value="Project Management">Project Management</option>
+              <option value="QA Manual)">QA Manual</option>
+            </select><br>
+          </div>
+
+          <div class="field_wrapper">
+            <label for="address">Повна адреса</label>
+            <input type="text" id="address" name="address" placeholder="Країна, регіон, місто/селище, вулиця"
+              required><br>
+          </div>
+      </section>
+  </main>
+
+  <footer>
+      <input type="checkbox" id="agree" name="agree" value="agree" required>
+      <label for="agree">Я погоджуюся з обробкою персональних даних</label><br>
+ 
+  <div class="buttons">
+    <button type="reset">Очистити форму</button>
+    <button type="submit">Зареєстуватися</button>
+  </div>
+</footer>
+</body>
+</form>
+
+</html>

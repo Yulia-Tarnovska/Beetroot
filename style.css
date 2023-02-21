@@ -1,0 +1,15 @@
+.field_wrapper {
+  padding: 5px;
+  width: 25%;
+  display: flex; 
+  justify-content: space-between;
+}
+
+.field_wrapper input, .field_wrapper select {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.buttons {
+  margin-top: 5px
+}
