@@ -6,107 +6,132 @@
 
 <head>
   <title>Figma</title>
-  
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-  <header class="header">
-    <a href="#Home" >Home</a>
-    <a href="#About" >About me</a>
-    <a href="#Skills" >Skills</a>
-    <a href="#Portfolio" >Portfolio</a>
-    <a href="#Contacts" >Contacts</a>
-  </header>
-  <hr>
-  <p id="Home" class="name">
-    <h1>Denis Novik</h1>
-  </p>
-  <img class="main-photo" src="./assets/photox940.jpg" alt="main photo"> 
-  
-  <main>
-    <div>
-      <article id="About" class="titles">
-        <h1>About me</h1>
-        <p class="text">Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.
-        I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
-        Ready to implement excellent projects with wonderful people.
-        </p>
-      </article>
-
-      <section id="Skills" class="titles">
-        <h1>Skills</h1>
-        <p class="text">I work in such programs as </p>
-        <p class="skill-image">
-          <img src="./assets/ps.png" alt="Photoshop">
-          <p class="skills-text"> Adobe Photoshop </p>
-          <img src="./assets/star-icon.png">
-          <img src="./assets/star-icon.png">
-          <img src="./assets/star-icon (1).png">
-          <img src="./assets/star-icon (1).png">
-          <img src="./assets/star-icon (1).png">
-
-        <p>
-          <img src="./assets/ai.png" alt="Adobe Illustrator">
-          <p class="skills-text">Adobe Illustrator</p>
-          <img src="./assets/star-icon.png">
-          <img src="./assets/star-icon.png">
-          <img src="./assets/star-icon.png">
-          <img src="./assets/star-icon (1).png">
-          <img src="./assets/star-icon (1).png">
-        </p>
-
-        <p>
-          <img src="./assets/Ae.png" alt="Adobe After Effects">
-          <p class="skills-text">Adobe After Effects</p>
-          <img src="./assets/star-icon.png">
-          <img src="./assets/star-icon.png">
-          <img src="./assets/star-icon.png">
-          <img src="./assets/star-icon.png">
-          <img src="./assets/star-icon (1).png">
-        </p>
-
-        <p>
-          <img src="./assets/Figma.png" alt="Figma">
-          <p class="skills-text">Figma</p>
-          <img src="./assets/star-icon.png">
-          <img src="./assets/star-icon.png">
-          <img src="./assets/star-icon.png">
-          <img src="./assets/star-icon.png">
-          <img src="./assets/star-icon.png">
-        </p>
-        
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav class="navigation">
+          <a href="#Home">Home</a>
+          <a href="#About">About me</a>
+          <a href="#Skills">Skills</a>
+          <a href="#Portfolio">Portfolio</a>
+          <a href="#Contacts">Contacts</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="home" class="name">
+        <div class="wrapper">
+          <h1>Denis Novik</h1>
+          <img class="main-photo" src="./assets/photox940.jpg" alt="main photo">
+        </div>
+      </section>
+      <section id="about" class="titles">
+        <div class="wrapper">
+          <h2>About me</h2>
+          <p class="text">Hi, I'm Denis – UX/UI designer from Minsk.
+            I'm interested in design and everything connected with it.
+          </p>
+          <p class="text">
+            I'm studying at courses "Web and mobile design
+            interfaces" in IT-Academy.
+          </p>
+          <p class="text">
+            Ready to implement excellent projects
+            with wonderful people.
+          </p>
+        </div>
       </section>
 
-    <section id="Portfolio" class="titles"> 
-      <h1>Portfolio</h1>
-      <div class="portfolio-images">
-        <img src="./assets/Fashion-Store.png" alt="Fasion store">
-          <p class="text">Online fashion store - Homepage</p>
-        <img src="./assets/reebok_web.png" alt="Reebok">
-          <p class="text">Reebok Store - Concept</p>
-        <img src="assets/braun-landing.png" alt="Braun">
-          <p class="text">Braun Landing Page - Concept</p>
-      </div>
-    </section>
+      <section id="skills" class="titles">
+        <div class="wrapper">
+          <h2>Skills</h2>
+          <p class="skills-text-title">I work in such programs as </p>
 
-    <section id="Contacts" class="titles"> 
-      <h1>Contacts</h1>
-      <p class="text">Want to know more or just chat? You are welcome!</p>
+          <div class="skill-info">
+            <div class="skill-image">
+              <img src="./assets/ps.png" alt="Photoshop">
+
+              <p class="skills-text">Adobe Photoshop </p>
+              <img src="./assets/star-icon.png">
+              <img src="./assets/star-icon.png">
+              <img src="./assets/star-icon (1).png">
+              <img src="./assets/star-icon (1).png">
+              <img src="./assets/star-icon (1).png">
+            </div>
+
+            <div class="skill-image">
+              <img src="./assets/ai.png" alt="Adobe Illustrator">
+
+              <p class="skills-text">Adobe Illustrator</p>
+              <img src="./assets/star-icon.png">
+              <img src="./assets/star-icon.png">
+              <img src="./assets/star-icon.png">
+              <img src="./assets/star-icon (1).png">
+              <img src="./assets/star-icon (1).png">
+            </div>
+
+            <div class="skill-image">
+              <img src="./assets/Ae.png" alt="Adobe After Effects">
+
+              <p class="skills-text">Adobe After Effects</p>
+              <img src="./assets/star-icon.png">
+              <img src="./assets/star-icon.png">
+              <img src="./assets/star-icon.png">
+              <img src="./assets/star-icon.png">
+              <img src="./assets/star-icon (1).png">
+            </div>
+            <div>
+              <img class="skill-image" src="./assets/Figma.png" alt="Figma">
+
+              <p class="skills-text">Figma</p>
+              <img src="./assets/star-icon.png">
+              <img src="./assets/star-icon.png">
+              <img src="./assets/star-icon.png">
+              <img src="./assets/star-icon.png">
+              <img src="./assets/star-icon.png">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="titles">
+        <div class="wrapper">
+          <h2>Portfolio</h2>
+          <div class="portfolio-images">
+            <img src="./assets/Fashion-Store.png" alt="Fasion store">
+            <p class="portfolio-text">Online fashion store - Homepage</p>
+            <img src="./assets/reebok_web.png" alt="Reebok">
+            <p class="portfolio-text">Reebok Store - Concept</p>
+            <img src="assets/braun-landing.png" alt="Braun">
+            <p class="portfolio-text">Braun Landing Page - Concept</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer id="contacts" class="titles">
+      <div class="wrapper">
+        <h2>Contacts</h2>
+        <p class="contacts-text">Want to know more or just chat? You are welcome!</p>
         <div class="button">
           <img src="./assets/button.png" alt="Send message">
-        </div>  
-      <div class="social-images">
-        <img src="./assets/linkedin.png" alt="linkedin">
-        <img src="./assets/instagram.png" alt="instagram">
-        <img src="./assets/behance.png" alt="behance">
-        <img src="./assets/dribbble.png" alt="dribbble">
-      </div>  
-    </section>
-   
-  </main>  
-
-    <footer>
+        </div>
+        <div class="social-images">
+          <img src="./assets/linkedin.png" alt="linkedin">
+          <img src="./assets/instagram.png" alt="instagram">
+          <img src="./assets/behance.png" alt="behance">
+          <img src="./assets/dribbble.png" alt="dribbble">
+        </div>
         <p class="footer">Like me on <br>
-          LinkedIn, Instagram, Behance, Dribble</p>
-
+          LinkedIn, Instagram, Behance, Dribble
+        </p>
+      </div>
     </footer>
+  </body>
+
+</html>

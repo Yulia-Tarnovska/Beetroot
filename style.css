@@ -1,0 +1,170 @@
+body {
+  text-align: center;
+  font-family: "Open Sans";
+}
+
+h2 {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46px;
+  margin: 0;
+}
+
+.wrapper {
+  padding: 0 235px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  row-gap: 20px;
+  padding: 28px 0;
+  border-bottom: 1px solid #828282;
+}
+
+.navigation a {
+  display: inline-block;
+  margin-right: 40px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #828282;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: #070707;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
+  color: #070707;
+  padding-top: 12px;
+  text-align: left;
+  margin: 0;
+}
+
+.name h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
+  margin: 0;
+}
+
+.name .main-photo {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+}
+
+#about {
+  padding: 100px 245px 100px;
+}
+
+#about,
+#portfolio {
+  background-color: #f6f6f6;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.text:first-of-type {
+  margin-top: 50px;
+}
+
+.text:last-of-type {
+  margin-bottom: 0;
+}
+
+.titles {
+  padding: 100px 0;
+}
+
+#skills .skills-text-title {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.skills-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19.07px;
+  text-align: center;
+  color: #828282;
+  max-width: 80px;
+  margin: 30px auto 60px;
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 22px;
+  gap: 50px;
+}
+
+#portfolio h2 {
+  padding-bottom: 50px;
+}
+
+.portfolio-text {
+  margin: 40px 0 70px;
+}
+
+.portfolio-text:last-of-type {
+  margin-bottom: 0;
+}
+
+.portfolio-images img {
+  width: 100%;
+  height: auto;
+}
+
+#contacts {
+  padding: 100px 320px 100px;
+}
+.contacts-text {
+  margin: 20px 0 60px;
+}
+
+.button {
+  width: 180px;
+  height: 44px;
+  padding: 0px 16px;
+  background: #070707;
+  border-radius: 22px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.social-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer {
+  width: 200px;
+  margin: 60px auto 0;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #828282;
+}
