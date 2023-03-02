@@ -50,6 +50,7 @@ input[type='checkbox'] {
     left: 141px;
     top: 114px;
     background: #FFFFFF;
+    vertical-align: bottom;
 }
 
 label {
@@ -65,25 +66,24 @@ label {
     color: #FFFFFF;
 }
 
+span {
+    vertical-align: center;
+    left: 298px;
+    top: 114px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+}
+
 .sells:nth-child(even) {
     background: #88839E;
+    padding-left: 12px;
 }
 
 .sells:nth-child(odd) {
     background: #625E77;
+    padding-left: 12px;
 }
-/* label::after span {
-    width: 175px;
-    height: 16px;
-    left: 298px;
-    top: 114px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFFFFF;
-} */
 
 .sells {
     width: 530px;
@@ -105,7 +105,7 @@ input[type=checkbox]:checked + label  {
     text-decoration: line-through;
     color: #9B96AC;
 }
-.sells:focus {
+.sells:focus-visible {
     background-color: #FF8984;
     
 }
@@ -123,4 +123,13 @@ input[type=checkbox]:checked + label  {
     line-height: 21px;
     color: #FF8984;
     margin: 45px 130px;
+    border: none;
+}
+
+.checkmark {
+    width: 9px;
+    height: 6.5px;
+    left: 146px;
+    top: 165px;
+    border: 3px solid #000000
 }
