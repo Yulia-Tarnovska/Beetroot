@@ -31,7 +31,6 @@ h1 {
     color: #FFFFFF;
     transition: all .1s ease-in;
     padding: 0;
-
 }
 
 .wi {
@@ -48,6 +47,11 @@ h1 {
     font-size: 22px;
     display: inline-block;
     box-sizing: border-box;
+    opacity: 0.6;
+}
+
+.list li:hover {
+    opacity: 1;
 }
 
 .Lisbon {
