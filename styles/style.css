@@ -1,0 +1,129 @@
+body {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+h1 {
+    width: 224px;
+    height: 25.28px;
+    left: 135px;
+    top: 66.1px;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+    display: inline-block;
+}
+
+.wrapper {
+    border: 25px solid #2B81AC;
+    background-color: #3399CC;
+    padding: 50px 110px;
+}
+
+.list {
+    text-align: center;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 0px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: all .1s ease-in;
+    padding: 0;
+
+}
+
+.wi {
+    height: 61px;
+    font-family: 'Weather Icons';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 61px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.list li {
+    font-size: 22px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.Lisbon {
+    width: 50%;
+    background: #3399CC;
+    border: 2px solid #FFFFFF;
+}
+
+.Paris {
+    width: 25%;
+    background: #33CCCC;
+    border: 2px solid #FFFFFF;
+}
+
+.Belgrade {
+    width: 25%;
+    background: #996699;
+    border: 2px solid #FFFFFF;
+}
+
+.Venice {
+    width: 25%;
+    background: #C24747;
+    border: 2px solid #FFFFFF;
+}
+
+.Tel-Avive {
+    width: 25%;
+    background: #E2674A;
+    border: 2px solid #FFFFFF;
+}
+
+.Cair {
+    width: 25%;
+    background: #FFCC66;
+    border: 2px solid #FFFFFF;
+}
+
+.New-York {
+    width: 25%;
+    background: #99CC99;
+    border: 2px solid #FFFFFF;
+}
+
+.New-Delhi {
+    width: 25%;
+    background: #669999;
+    border: 2px solid #FFFFFF;
+}
+
+.San-Francisco {
+    width: 50%;
+    background: #CC6699;
+    border: 2px solid #FFFFFF;
+}
+
+.Tokyo {
+    width: 25%;
+    background: #339966;
+    border: 2px solid #FFFFFF;
+}
+
+.Sydney {
+    width: 100%;
+    background: #666699;
+    border: 2px solid #FFFFFF;
+}
+
+footer {
+    width: 549px;
+    height: 25px;
+    left: 137px;
+    top: 756px;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding-top: 40px;
+}
