@@ -24,7 +24,28 @@
   }
   
   .wrapper {
-    padding: 150px 120px;
+    padding: 150px 120px 0;
+  }
+
+
+  .top-header {
+    font-family: "Francois One";
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 10px 120px;
+    display: flex;
+  }
+
+  .header-left {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .header-right {
+    font-size: 50px;
   }
 
   .headers {
