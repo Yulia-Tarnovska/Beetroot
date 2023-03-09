@@ -48,6 +48,13 @@
     font-size: 50px;
   }
 
+  .fa-lg {
+    font-size: 70px;
+    line-height: 1em;
+    vertical-align: -10%;
+    width: 30px
+  }
+
   .headers {
     display: inline-block;
     font-family: "Francois One";
