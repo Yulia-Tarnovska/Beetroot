@@ -66,6 +66,13 @@
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
+.headers-left {
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+}
+
 .logo {
     width: 238px;
     height: 54px;
