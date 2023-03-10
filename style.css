@@ -1,3 +1,12 @@
+.wrapper {
+    background-image: url="../assets/bg-picture.png";
+    /* position: absolute;
+    left: 56.39%;
+    right: -9.17%;
+    top: 4.87%;
+    bottom: 70.46%; */
+}
+
 .eng {
     font-family: 'Tourney';
     font-style: normal;
@@ -32,7 +41,7 @@
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-.menu {
+.menu a {
     height: 48px;
     font-family: 'Francois One';
     font-style: normal;
@@ -42,6 +51,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #000000;
+    text-decoration: none;
 }
 
 .section-headers {
@@ -76,3 +86,29 @@
     line-height: 48px;
     color: #000000;
 }
+
+.text {
+    font-family: 'PTSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+  }
+
+  .text-italic {
+    font-family: 'PTSans-Italic';
+  }
+
+  .text-bold {
+    font-family: 'PTSans-Bold';
+  }
+  .underline-text {
+    text-decoration: underline;
+  }
+
+  .grey-background {
+    background-color: rgb(206, 205, 205);
+  }
+
+ 
