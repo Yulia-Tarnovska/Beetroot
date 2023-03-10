@@ -66,8 +66,15 @@
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-.headers-left {
-        font-size: 20px;
+.header-style {
+    font-family: "Francois One";
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-content: space-between;
+    display: flex;
+  }
+
+.header{
         display: flex;
         justify-content: space-between;
         gap: 60px;
@@ -81,7 +88,17 @@
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
+.menu {
+    padding-top: 160px;
+}
+
 .menu a {
+    display: flex;
+    justify-content: baseline;
+    padding-left: 130px;
+    
+    padding-bottom: 80px;
+    border-bottom: 1px solid gray;
     height: 48px;
     font-family: 'Francois One';
     font-style: normal;
@@ -94,6 +111,11 @@
     text-decoration: none;
 }
 
+.main-wrap {
+    padding-left: 535px;
+    padding-top: 150px;
+}
+
 .section-headers {
     height: 48px;
     font-family: 'Francois One';
@@ -104,6 +126,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #000000;
+   
 }
 
 .chapters {
