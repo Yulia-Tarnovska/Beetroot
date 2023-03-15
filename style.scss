@@ -1,0 +1,293 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 90px;
+}
+
+.form-create-account, .form-profile  {
+    width: 570px;
+    height: 590px;
+}
+
+h1 {
+    padding-bottom: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1C1C;
+}
+
+input, label {
+    display: block;
+}
+
+a {
+    color: #007BFF;
+}
+
+label {
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+}
+
+input {
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid #007BFF;
+}
+
+.first-last-name {
+    display: flex;
+    gap: 10px;
+}
+
+.first-last-name input {
+    Width: 240px;
+    Height: 38px;
+}
+
+.email {
+    padding-bottom: 7px;
+    width: 500px;
+}
+.email input {
+    Width: 500px;
+    Height: 38px;
+}
+
+.email-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+    padding-bottom: 20px;
+}
+
+.radio-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.male input, .male label, .female input, .female label   {
+    display: inline;
+}
+
+
+.country-city {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.country-city select, .country-city input {
+    Width: 245px;
+    Height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
+
+select {
+    color: #9e9e9e;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px; 
+  }
+
+  option:not(:first-of-type) {
+    color: black;
+  }
+  
+.sign-up-button {
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    Width: 500px;
+    Height: 38px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #E4E4E4;
+}
+
+.footer-text {
+    width: 500px;
+}
+
+.footer-text p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #969696;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b7b4b4;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.footer-text a {
+    text-decoration: none;
+}
+
+.footer-log-in p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+    padding-top: 20px;
+    width: 120px;
+}
+
+.footer-log-in  {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.not-blue {
+    color: #969696;;
+}
+
+.footer-log-in a {
+    text-decoration: none;
+}
+
+.profile-title {
+    padding-left: 35px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: left;
+}
+
+.profile-photo {
+    Width: 80px;
+    Height: 80px;
+    padding: 20px 20px 20px 35px;
+}
+ 
+/* .upload::after {
+    content: src(url="./assets/upload.png");
+}  */
+
+.upload input {  
+    display: none;
+  }
+
+.upload label {
+    width: 140px;
+    height: 30px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.upload-image {
+    width: 16px;
+    height: 16px;
+    right: 8px;
+    top: calc(50% - 16px/2);
+}
+
+.upload-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+}
+
+.trash-button {
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
+
+.trash {
+    padding-top: 30px;
+}
+
+.profile-info {
+    display: flex;
+    flex-wrap: wrap;
+   gap: 10px;
+   padding-left: 35px;
+}
+
+.profile-info input, .profile-info select {
+    Width: 245px;
+    Height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+} 
+
+.country-city select, .country-city input {
+    Width: 245px;
+    Height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}
+
+.button-update {
+    Width: 150px;
+    Height: 38px;
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #FFFFFF;
+}
+
+.b-update {
+    padding-top: 30px;
+    padding-left: 45px;
+}
