@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url(./fonts/quicksand/Quicksand_Book.otf);
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url(./fonts/nunitosans/NunitoSans-Bold.ttf);
+}
+
+main {
+    width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.logo {
+    height: 80px;
+    display: flex;
+    gap: 12.5px;
+    padding-left: 135px;
+    padding-top: 25px;
+    border-bottom: 1px solid #EFEEF3;
+}
+
+.image-logo {
+    width: 30px;
+    height: 30px;
+    background: #3DB370;
+    border: 1px solid #3DB370;
+    background-color: white;
+}
+
+.logo-text {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 35px;
+    color: #16133D;
+}
+
+.our-services-text {
+    text-transform: capitalize;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #7690A8;
+    padding-top: 125px;
+    padding-left: 135px;
+}
+
+.we-text {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    color: #16133D;
+    padding-top: 15px;
+    padding-left: 135px;
+}
+
+.services {
+    display: flex;
+    gap: 30px;
+    padding-left: 135px;
+    padding-top: 40px;
+}
+
+section {
+    width: 370px;
+    height: 340px;
+    background: #FFFFFF;
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.service-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    color: #16133D;
+    padding-top: 30px;
+}
+
+.service-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #16133D;
+    padding-top: 15px;
+}
+
+.learn-more {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3DB370;
+    padding-top: 30px;
+    padding-bottom: 40.5px;
+}
+
+.bottom {
+    height: 193px;
+    top: 741px;
+    background: #16133D;
+    border-radius: 0px;
+}
+
+.bottom-logo {
+    background: none;
+    display: flex;
+    gap: 12.5px;
+    padding-left: 136px;
+    padding-top: 42.5px;
+}
+
+.bottom-logo-text {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.social-icons {
+    padding-left: 135px;
+    padding-top: 40px;
+}
+
+.social-icons svg {
+
+    width: 38px;
+    height: 38px;
+    background: #EFEEF3;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.social-icons svg:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    color: #3DB370;
+}
+
+main svg:hover {
+    cursor: pointer;
+}
+
+.svg-icon-design:hover {
+    fill: #16133D;
+}
+
+.svg-icon-application:hover {
+    fill: darkgreen;
+}
+
+.svg-icon-ecommerce:hover {
+    fill: #16133D;
+}
+
+.footer-all {
+    margin: 0 auto;
+    width: 1440px;
+}
