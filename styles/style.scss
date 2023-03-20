@@ -1,3 +1,105 @@
-h1 {
-    font-size: 25px;
+@import './reset.scss';
+@import './fonts.scss';
+@import './mixins.scss';
+@import './variables.scss';
+/* header {  */
+.top-title {
+  @include text("Raleway", 500, 18px, 24px);
+  text-align: center;
+  border-top: 1px solid #FFCC00;
+  padding-top: 121px;
+  text-transform: uppercase;
 }
+
+.main-title {
+  @include text("Roboto", 900, 60px, 66px);
+  text-align: center;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+
+.main-photo {
+  width: 400px;
+  height: 400px;
+  padding-top: 180px;
+  width: 723px;
+  padding-left: 40px;
+}
+
+.lines {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+
+}
+
+.first-line, .second-line {
+  width: 210px;
+  border-top: 1px solid $color-gold;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid $color-gold;
+}
+
+.text-wrapper {
+  text-align: center;
+  width: 720px;
+  border-left: 1px solid $color-gold;
+}
+
+.name {
+  font-family: "Roboto";
+  font-weight: "900";
+  font-size: "36px";
+  line-height: "42px";
+  padding-top: 135px;
+  margin-top: 40px;
+}
+
+.occupation {
+  font-family: "Raleway";
+  font-weight: "400";
+  font-size: "24px";
+  line-height: "36px";
+  padding-top: 60px;
+}
+
+.social-icons {
+  padding-top: 30px;
+  padding-right: 5px;
+}
+
+.main-text {
+  font-family: "Open Sans";
+  font-weight: "700";
+  font-size: "14px";
+  line-height: "14px";
+  padding-top: 50px;
+  margin-left: 85px;
+  margin-right: 120px;
+}
+
+.view-profile-button {
+  padding-top: 55px;
+ 
+  margin: 0 auto;
+}
+
+.view-profile-button button {
+  font-family: "Open Sans";
+  font-weight: "700";
+  font-size: "14px";
+  line-height: "14px";
+  width: 108px;
+  height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 55px;
+  border: 1px solid $color-gold;
+  color: #666666;
+}
+
