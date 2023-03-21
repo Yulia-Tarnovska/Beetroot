@@ -1,0 +1,452 @@
+@font-face {
+  font-family: "Lato";
+  src: url(./Lato2OFL/Lato2OFL/Lato-Light.ttf);
+}
+@font-face {
+  font-family: "RedHat";
+  src: url(./red-hat/RedHatDisplay-Medium.ttf);
+}
+body {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "RedHat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.title-blog {
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+}
+
+.header-wrapper {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 135px;
+  padding-right: 135px;
+}
+.header-wrapper .logo {
+  width: 142px;
+  height: 12px;
+}
+.header-wrapper .top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 42px;
+}
+.header-wrapper .menu-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 85px;
+}
+.header-wrapper .top-menu-item {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+.header-wrapper .top-menu-item:active {
+  text-decoration: underline;
+}
+
+.main-photo {
+  padding-top: 100px;
+  background-image: url(./assets/bg-image.svg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.main-photo-text {
+  font-family: "RedHat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  padding-left: 135px;
+}
+
+main {
+  padding-left: 135px;
+}
+main .blog {
+  padding-top: 90px;
+}
+main .blog .title-blog {
+  font-family: "RedHat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  padding-bottom: 50px;
+  padding-left: 65px;
+}
+main .blog .blog-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding-bottom: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .blog .blog-section:first-of-type .blog-text {
+  padding-right: 122px;
+}
+main .blog .blog-section:first-of-type .blog-img {
+  background-image: url(./assets/arrow.svg);
+}
+main .blog .blog-section:last-of-type .blog-text {
+  padding-left: 122px;
+}
+main .blog .blog-section:last-of-type .blog-img {
+  background-image: url(./assets/bg-image.svg);
+}
+main .blog .blog-section .blog-img,
+main .blog .blog-section .blog-text {
+  width: 45%;
+}
+main .blog .blog-section .blog-img img,
+main .blog .blog-section .blog-text img {
+  max-width: 570px;
+}
+main .blog .blog-section .blog-img {
+  max-width: 570px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-height: 470px;
+}
+main .blog .blog-section .blog-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 448px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+main .blog .blog-section .blog-top-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #7B7B7B;
+}
+main .blog .blog-section .blog-main-text {
+  font-family: "RedHat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+}
+main .blog .blog-section .blog-date {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #7B7B7B;
+}
+main .blog .blog-section .blog-description {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+main .blog .blog-section .blog-description::after {
+  content: url(./assets/Arrow-small.svg);
+}
+
+.small-arrow {
+  width: 23px;
+  height: 0px;
+  color: #7B7B7B;
+}
+
+.view-all::after {
+  content: url(./assets/Arrow-small.svg);
+  padding-left: 20px;
+}
+
+.view-all {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #7B7B7B;
+  padding-right: 70px;
+}
+
+.latest-posts header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+}
+.latest-posts .latest-posts img {
+  width: 370px;
+  height: 260px;
+}
+.latest-posts .latest-posts-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.latest-posts .latest-photo {
+  width: 370px;
+  height: 260px;
+  padding-bottom: 25px;
+}
+.latest-posts .latest-top-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 30px;
+}
+.latest-posts .latest-top, .latest-posts .latest-date {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #7B7B7B;
+}
+.latest-posts .latest-main-text {
+  font-family: "RedHat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.latest-posts .latest-description {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.05em;
+  color: #565656;
+  padding-bottom: 110px;
+}
+
+.the-most-popular header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+}
+.the-most-popular .the-most-popular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.the-most-popular .most-photo {
+  width: 570px;
+  height: 260px;
+}
+.the-most-popular .most-top-text, .the-most-popular .most-date {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #7B7B7B;
+}
+.the-most-popular .the-most-popular-text {
+  max-width: 570px;
+}
+.the-most-popular .most-main-text {
+  font-family: "RedHat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.the-most-popular .most-description {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.05em;
+  color: #565656;
+  padding-bottom: 110px;
+}
+.the-most-popular .most-top-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.load-more {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  width: 180px;
+  height: 46px;
+  background: #565656;
+  color: #FFFFFF;
+  margin-left: 495px;
+  margin-bottom: 90px;
+}
+
+.text-after-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 230px;
+}
+
+.text-after1 {
+  font-family: "RedHat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.text-after2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+
+.text-after2 p:first-of-type {
+  padding-bottom: 15px;
+}
+
+footer {
+  background-color: #F4F4F4;
+}
+footer .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 1440px;
+  height: 300px;
+  margin-top: 90px;
+}
+footer .footer-wrapper .footer-need {
+  font-family: "RedHat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+footer .footer-wrapper .footer-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+footer .footer-wrapper .footer-text p:nth-child(2) {
+  padding-bottom: 15px;
+}
+footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding-top: 125px;
+}
+footer .socials img {
+  width: 50px;
+  height: 50px;
+}
+footer .socials img:hover {
+  background-color: #565656;
+  opacity: 0.5;
+}
+
+.bottom-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+.bottom-text .copyright {
+  text-align: center;
+  padding-top: 25.5px;
+  padding-bottom: 30px;
+}

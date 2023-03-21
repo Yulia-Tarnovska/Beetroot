@@ -1,0 +1,351 @@
+@import "../fonts/fonts.scss";
+@import "./mixins.scss";
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.title {
+    @include text('RedHat', normal, 600, 28px, 166%, 0.1em);
+    color: #000000;
+}
+
+.title-blog {
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+}
+
+.header-wrapper {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 135px;
+    padding-right: 135px;
+
+    .logo {
+        width: 142px;
+        height: 12px;
+    }
+
+    .top-menu {
+        display: flex;
+        gap: 42px;
+    }
+
+    .menu-search {
+        display: flex;
+        gap: 85px;
+    }
+
+    .top-menu-item {
+        @include text('Lato', normal, 400, 14px, 17px, 0.3em);
+        text-transform: uppercase;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .top-menu-item:active {
+        text-decoration: underline;
+    }
+}
+
+
+.main-photo {
+    padding-top: 100px;
+    background-image: url(./assets/bg-image.svg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-photo-text {
+    @include text('RedHat', normal, 600, 48px, 64px, 0.05em);
+    padding-left: 135px;
+}
+
+main {
+    padding-left: 135px;
+
+
+    .blog {
+        padding-top: 90px;
+
+        .title-blog {
+            @include text('RedHat', normal, 400, 48px, 64px, 0.05em);
+            padding-bottom: 50px;
+            padding-left: 65px;
+        }
+
+        .blog-section {
+            display: flex;
+            gap: 30px;
+            padding-bottom: 50px;
+            justify-content: center;
+
+            &:first-of-type {
+                .blog-text {
+                    padding-right: 122px;
+                }
+
+                .blog-img {
+                    background-image: url(./assets/arrow.svg);
+                }
+            }
+
+            &:last-of-type {
+                .blog-text {
+                    padding-left: 122px;
+                }
+
+                .blog-img {
+                    background-image: url(./assets/bg-image.svg);
+                }
+            }
+
+            .blog-img,
+            .blog-text {
+                width: 45%;
+               
+                img {
+                    max-width: 570px;
+                }
+            }
+
+            .blog-img {
+                max-width: 570px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100vh;
+                max-height: 470px;
+            }
+
+            .blog-text {
+                display: flex;
+                align-items: center;
+                max-width: 448px;
+                justify-content: space-around;
+            }
+
+            .blog-top-text {
+                @include text('Lato', normal, 400, 16px, 166%, 0.1em);
+                color: #7B7B7B;
+            }
+
+            .blog-main-text {
+                @include text('RedHat', normal, 500, 23px, 166%, 0.1em);
+            }
+
+            .blog-date {
+                @include text('Lato', normal, 400, 16px, 166%, 0.1em);
+                color: #7B7B7B;
+            }
+
+            .blog-description {
+                @include text('Lato', normal, 400, 16px, 166%, 0.05em);
+                color: #565656;
+            }
+
+            .blog-description::after {
+                content: url(./assets/Arrow-small.svg);
+            }
+        }
+    }
+}
+
+.small-arrow {
+    width: 23px;
+    height: 0px;
+    color: #7B7B7B;
+}
+
+.view-all::after {
+    content: url(./assets/Arrow-small.svg);
+    padding-left: 20px;
+}
+
+.view-all {
+    @include text('Lato', normal, 400, 16px, 166%, 0.1em);
+    color: #7B7B7B;
+    padding-right: 70px;
+}
+
+.latest-posts {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+
+    .latest-posts img {
+        width: 370px;
+        height: 260px;
+    }
+    .latest-posts-wrapper {
+        display: flex;
+        gap: 30px
+    }
+
+    .latest-photo {
+        width: 370px;
+        height: 260px;
+        padding-bottom: 25px;
+    }
+    .latest-top-text {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+
+    .latest-top, .latest-date {
+        @include text('Lato', normal, 400, 12px, 166%, 0.1em);
+        color: #7B7B7B;
+    }
+
+    .latest-main-text {
+        @include text('RedHat', normal, 500, 22px, 166%, 0.1em);
+        color: #000000;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    .latest-description {
+        @include text('Lato', normal, 400, 16px, 166%, 0.05em);
+        color: #565656;
+        padding-bottom: 110px;
+    }
+}
+
+.the-most-popular {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+
+    .the-most-popular {
+        display: flex;
+        gap: 30px;
+    }
+
+    .most-photo {
+        width: 570px;
+        height: 260px;
+    }
+
+    .most-top-text, .most-date {
+        @include text('Lato', normal, 400, 12px, 166%, 0.1em);
+        color: #7B7B7B;
+       
+    }
+
+    .the-most-popular-text {
+        max-width: 570px;
+    }
+
+    .most-main-text {
+        @include text('RedHat', normal, 500, 22px, 166%, 0.1em);
+        color: #000000;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    .most-description {
+        @include text('Lato', normal, 400, 16px, 166%, 0.05em);
+        color: #565656;
+        padding-bottom: 110px;
+    }
+    
+    .most-top-text {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.load-more {
+    @include text('Lato', normal, 700, 16px, 166%, 0.1em);
+    width: 180px;
+    height: 46px;
+    background: #565656;
+    color: #FFFFFF;
+    margin-left: 495px;
+    margin-bottom: 90px;
+}
+
+.text-after-button {
+    display: flex;
+    gap: 230px;
+}
+
+.text-after1 {
+    @include text('RedHat', normal, 400, 23px, 166%, 0.1em);
+    color: #000000;
+}
+
+.text-after2 {
+    @include text('Lato', normal, 400, 19px, 32px, 0.05em);
+    color: #565656;
+}
+
+.text-after2 p:first-of-type {
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: #F4F4F4;
+
+    .footer-wrapper {
+            display: flex;
+            justify-content: space-around;
+            width: 1440px;
+            height: 300px;
+            margin-top: 90px;
+
+        .footer-need {
+            @include text('RedHat', normal, 400, 48px, 64px, 0.05em);
+            color: #000000;
+            padding-top: 70px;
+            padding-bottom: 30px;
+        }
+
+        .footer-text {
+            @include text('Lato', normal, 400, 16px, 166%, 0.1em);
+            color: #000000;
+        }
+        
+        .footer-text p:nth-child(2) {
+            padding-bottom: 15px;
+        }
+        }
+
+        .socials {
+            display: flex;
+            gap: 10px;
+            padding-top: 125px;
+        }
+
+        .socials img {
+            width: 50px;
+            height: 50px;
+            
+        }  
+
+        .socials img:hover {
+            background-color: #565656;
+            opacity: 0.5;
+        } 
+        
+    }
+    .bottom-text {
+        @include text('Lato', normal, 400, 12px, 166%, 0.1em);
+        color: #000000; 
+
+    .copyright {
+        text-align: center;
+        padding-top: 25.5px;
+        padding-bottom: 30px;
+    }
+}
