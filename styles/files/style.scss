@@ -1,0 +1,352 @@
+@import '../mixins.scss';
+@import '../fonts/font.css';
+
+main {
+    padding-left: 175px;
+    padding-right: 175px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+
+    img:first-of-type {
+        padding-right: 10px;
+    }
+
+    .menu__nav {
+        display: flex;
+        gap: 45px;
+
+        a {
+            text-decoration: none;
+            color: #4B5D68;
+            @include text('Avenir', normal, 500, 16px, 160%, 0)
+        }
+
+        a:active {
+            text-decoration: none;
+            color: #4B5D68;
+        }
+    }
+
+    .menu__button {
+        button {
+            width: 234px;
+            height: 56px;
+            background: #FFFFFF;
+            box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+            border-radius: 50px;
+            @include text('Avenir', normal, 900, 16px, 160%, 0);
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            letter-spacing: 0.005em;
+            align-items: center;
+            color: #212353;
+
+        }
+    }
+}
+
+.save-data {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+
+    h1 {
+        width: 645px;
+        display: flex;
+        align-items: center;
+        color: #212353;
+        @include text ('Helvetica', normal, 700, 80px, 110%, 0);
+        padding-bottom: 50px;
+    }
+
+    .save-text {
+        width: 380px;
+        @include text ('Avenir', normal, 500, 18px, 160%, 0);
+        color: #4B5D68;
+        padding-bottom: 50px;
+    }
+
+    img {
+        width: 885px;
+        height: 468px;
+        padding-bottom: 50px;
+    }
+
+    button {
+        width: 170px;
+        height: 60px;
+        background: #9C69E2;
+        border-radius: 50px;
+        @include text ('Avenir', normal, 800, 18px, 160%, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+    }
+}
+
+.we-are {
+    width: 1117px;
+    height: 560px;
+    background: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin: 0 auto;
+
+    .img {
+        width: 477px;
+        height: 504px;
+    }
+
+    h2 {
+        width: 475px;
+        @include text ('Helvetica', normal, 700, 40px, 130%, 0);
+        display: flex;
+        align-items: center;
+        color: #212353;
+        padding-bottom: 40px;
+    }
+
+    p {
+        width: 474px;
+        @include text ('Avenir', normal, 500, 18px, 160%, 0);
+        color: #4B5D68;
+    }
+}
+
+.features {
+    text-align: center;
+    padding-bottom: 150px;
+
+    h3 {
+        padding-top: 150px;
+        padding-bottom: 50px;
+        @include text ('Helvetica', normal, 700, 40px, 130%, 0);
+        color: #212353;
+    }
+
+    .feature-text {
+        width: 584px;
+        @include text ('Avenir', normal, 500, 18px, 160%, 0);
+        margin: 0 auto;
+        color: #4B5D68;
+        padding-bottom: 100px;
+    }
+}
+
+
+.testimonials {
+
+    width: 1118px;
+    height: 709px;
+    background: #9C69E2;
+    border-radius: 50px;
+    padding-top: 150px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+
+    h2 {
+        @include text ('Helvetica', normal, 700, 40px, 130%, 0);
+        color: #FFFFFF;
+        padding-left: 110px;
+    }
+
+    .visit-card {
+        width: 645px;
+        height: 330px;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+        border-radius: 20px;
+        margin-top: 85px;
+        margin-left: 235px;
+        display: flex;
+        gap: 30px;
+        box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+
+        img {
+            width: 90px;
+            height: 90px;
+            padding: 60px 30px 0 70px;
+        }
+    }
+}
+
+.photo-text {
+    p:nth-child(1) {
+        @include text ('Avenir', normal, 900, 18px, 160%, 0.005em);
+        color: #212353;
+        padding-top: 80px;
+    }
+}
+
+.photo-text {
+    p:nth-child(2) {
+        @include text ('Avenir', normal, 500, 14px, 160%, 0.01em);
+        color: #9C69E2;
+    }
+}
+
+.photo-text {
+    p:nth-child(3) {
+        width: 385px;
+        @include text ('Avenir', normal, 400, 18px, 180%, 0);
+        color: #4B5D68;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+}
+
+
+footer {
+    border-top: 1px solid #9C69E2;
+    border-color: rgba(156, 105, 226, 0.2);
+
+    .footer-wrapper {
+        max-width: 1118px;
+        margin: 0 auto;
+
+        .footer-top {
+            display: flex;
+
+            .try-free {
+                padding-top: 100px;
+                padding-bottom: 150px;
+
+                p:nth-child(1) {
+                    @include text ('Helvetica', normal, 700, 40px, 130%, 0);
+                    color: #212353;
+                    padding-bottom: 20px;
+                }
+
+                p:nth-child(2) {
+                    @include text ('Avenir', normal, 500, 18px, 160%, 0);
+                    color: #4B5D68;
+                    width: 584px;
+                    padding-right: 125px;
+                }
+            }
+
+            .footer-buttons {
+                padding-top: 100px;
+                display: flex;
+                gap: 30px;
+
+                button:nth-child(1) {
+                    width: 170px;
+                    height: 60px;
+                    background: #F063B8;
+                    border-radius: 50px;
+                    @include text ('Avenir', normal, 900, 18px, 160%, 0);
+                    display: flex;
+                    align-items: center;
+                    color: #FFFFFF;
+                    justify-content: center;
+                    border-color: #F063B8;
+                }
+
+                button:nth-child(2) {
+                    width: 210px;
+                    height: 60px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+                    border-radius: 50px;
+                    @include text ('Avenir', normal, 900, 16px, 160%, 0.005em);
+                    display: flex;
+                    align-items: center;
+                    color: #212353;
+                    gap: 20px;
+                    justify-content: center;
+                    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+                    border-color: #FFFFFF;
+                }
+            }
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 120px;
+
+            .data-warehouse,
+            .address,
+            .phone {
+                max-width: 335px;
+            }
+
+            .data-warehouse {
+                @include text ('Avenir', normal, 900, 20px, 160%, 0);
+                color: #212353;
+                padding-left: 20px;
+                padding-bottom: 65px;
+                padding-right: 140px;
+            }
+
+            .address {
+                @include text ('Avenir', normal, 500, 16px, 180%, 0.01em);
+                color: #212353;
+
+                :nth-last-of-type() {
+                    padding-bottom: 10px;
+                }
+            }
+
+
+            .phone {
+                @include text ('Avenir', normal, 400, 16px, 180%, 0.01em);
+                color: #212353;
+            }
+
+            .footer-list {
+                width: 160px;
+            }
+
+            .list {
+                display: flex;
+                gap: 50px;
+            }
+
+            .footer-list li {
+                @include text ('Avenir', normal, 400, 16px, 250%, 0);
+                color: #212353;
+            }
+
+            .footer-list li:first-of-type {
+                @include text ('Avenir', normal, 900, 16px, 160%, 0);
+                padding-bottom: 30px;
+            }
+
+            .social-title {
+                @include text ('Avenir', normal, 900, 16px, 160%, 0);
+                color: #212353;
+                padding-bottom: 30px;
+            }
+
+            .socials {
+                display: flex;
+                gap: 15px;
+
+                img:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .bottom-text {
+            padding-bottom: 95px;
+
+            p {
+                @include text ('Avenir', normal, 400, 12px, 180%, 0.01em);
+                color: #212353;
+            }
+        }
+    }
+}
