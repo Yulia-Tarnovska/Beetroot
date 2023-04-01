@@ -20,21 +20,45 @@
                     <img class="logo" src="./styles/assets/logo.png" alt="logo">
                 </div>
 
-                <nav>
-                    <div class="menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Use Cases</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Resources</a></li>
-                        </ul>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Use Cases</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+                    <div id="menu-top">
+                        <div id="menu-bar" onclick="menuOnClick()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                        <nav class="nav" id="nav">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Use Cases</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Resources</a></li>
+                            </ul>
                     </div>
                 </nav>
             </div>
 
-            
+            <div class="menu-bg" id="menu-bg"></div>
+    
+            <script>
+                function menuOnClick() {
+                    document.getElementById("menu-bar").classList.toggle("change");
+                    document.getElementById("nav").classList.toggle("change");
+                    document.getElementById("menu-bg").classList.toggle("change-bg");
+                }
+            </script>
+
         </header>
 
         <main class="main-wrapper">
@@ -47,53 +71,53 @@
 
                     <p class="header-info-bottom-text">We are bringing real solutions to the payments world by leveraging public blockchains.</p>
                 
-                <button class="button-join-now" type="button" onclick="" >join now</button>
-            </div>
+                    <button class="button-join-now" type="button" onclick="" >join now
+                        <div class="shadow"></div>
+                    </button>
+                </div>
         </article>
 
-            <section>
-                <div class="info-wrapper">
-                    <div class="info-image">
-                        <img src="./styles/assets/second-screen-image.png">
-                    </div>
+            <section class="info-wrapper">
+                <div class="info-image">
+                    <img src="./styles/assets/second-screen-image.png">
+                </div>
                 <div class="info-box">
                     <div class="info-section">
-                    <div class="info-title">
-                        <p>1 tril</p>
-                        <p>Market cap potential</p>
+                        <div class="info-title">
+                            <p>1 tril</p>
+                            <p>Market cap potential</p>
+                        </div>
+                        <div class="info-text">
+                            <p>
+                                Solis group is a new venture created with investments from and collaboration with XBTO International, XBTO Ventures and Phil Potter, formerly of bitfinex. Stablehouse is intended to launch a first-of-its-kind clearing house for stablecoins that seeks to promote the next phase of the market’s development. 
+                            </p>
+                        </div>
                     </div>
-                    <div class="info-text">
-                        <p>
-                            Solis group is a new venture created with investments from and collaboration with XBTO International, XBTO Ventures and Phil Potter, formerly of bitfinex. Stablehouse is intended to launch a first-of-its-kind clearing house for stablecoins that seeks to promote the next phase of the market’s development. 
-                        </p>
+                    <div  class="info-section">
+                        <div  class="info-title"> 
+                            <p>3.65 mil</p>
+                            <p>Deposited to platform</p>
+                        </div>
+                        <div class="info-text">
+                            <p>The API-enabled, centralized platform addresses the key issues of inconsistent liquidity, stability and accessibility which are currently preventing the stablecoin market from reaching critical mass. 
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div  class="info-section">
-                    <div  class="info-title"> 
-                        <p>3.65 mil</p>
-                        <p>Deposited to platform</p>
+                    <div  class="info-section last-info-section">
+                        <div class="info-title">
+                            <p class="no-sign">12</p>
+                            <p>Stablecoins</p>
+                        </div>
+                        <div class="button-info">
+                            <button class="button-contact-sales" type="button">Contact sales
+                                <div class="shadow"></div>
+                            </button>
+                        </div>
                     </div>
-
-                    <div class="info-text">
-                        <p>The API-enabled, centralized platform addresses the key issues of inconsistent liquidity, stability and accessibility which are currently preventing the stablecoin market from reaching critical mass. 
-                        </p>
-                    </div>
-                </div>
-                <div  class="info-section last-info-section">
-                    <div class="info-title">
-                        <p class="no-sign">12</p>
-                        <p>Stablecoins</p>
-                    </div>
-                    <div class="button-info">
-                        <button class="button-contact-sales" type="button">Contact sales</button>
-                    </div>
-                </div>
                 </div>    
-                </div>
             </section>
 
             <section class="benefits-wrapper">
-                
                     <div class="benefits-section">
                         <div class="benefits-item">
                             <p class="benefits-title"> Qualified 
@@ -116,8 +140,6 @@
                             </p>
                         </div>
                     
-
-                    
                         <div class="benefits-item">
                             <p class="benefits-title">
                                 The best 
@@ -139,7 +161,7 @@
                                 Automate your stablecoin store with instant payments and on-the-fly conversion between different stablecoins.
                             </p>
                         </div>
-                    
+                    </div>
             </section>
 
             <section class="quote-wrapper">
@@ -156,7 +178,6 @@
 
             <section class="video-wrapper">
                 <div class="video-player-wrapper">
-                    
                     <img src="./styles/assets/video-small-button.svg">
                     <div class="video-player">
                         <video> 
@@ -172,6 +193,7 @@
                     <p class="video-text">Our API allows all members to interact with Stablehouse’s platform, from effecting transfers to deposits, withdrawals, creation and redemption and reporting.</p>
                 </div>
             </section>
+
             <section class="pr-wrapper">
                     <div class="promises-img">
                         <img class="promises-image" src="./styles/assets/promises-background.png">
@@ -188,25 +210,22 @@
                                 <p>Low Counterparty risk</p>
                                 <p>Direct transfers</p>
                             </div>
-                        
-                                <div class="promises-section">
-                                    <p>Time Settlement Swaps</p>
-                                    <p>LBTC / Lightning and other sidechain swaps</p>
-                                    <p></p>
-                                </div>
-                                <div class="promises-section">
-                                    <button class="button-join-now" type="button" onclick="" >join now</button>
-                                </div>
-                            
-                    </div>
-                
+                            <div class="promises-section">
+                                <p>Time Settlement Swaps</p>
+                                <p>LBTC / Lightning and other sidechain swaps</p>
+                                <p></p>
+                            </div>
+                            <div class="promises-section">
+                                <button class="button-join-now" type="button" onclick="" >join now
+                                    <div class="shadow"></div>
+                                </button>
+                            </div>
+                        </div>
             </section>
 
             <section class="client-reviews">
-                
                     <span class="client-title">Client </span>
                     <span class="text-blue-color">reviews</span>
-                    
                     <p class="client-text">Happy clients, happy us. Read our client reviews about the work process and results.</p>
 
                     <div class="client-reviews-section">
@@ -224,7 +243,6 @@
                             <p>Elvis Mooney</p>
                         </div>
                     </div>
-                
             </section>
 
             <footer>
@@ -232,7 +250,6 @@
                     <div class="contact-text">
                         <span class="footer-title">Contact </span>
                         <span class="text-blue-color"> our sales team</span>
-                        
                         <p>Our team is happy to answer your sales questions.<br>
                             Fill out the form and we’ll be in touch as soon as possible.</p>
                     </div>
@@ -241,7 +258,10 @@
                             <input type="text" id="name" name="name" placeholder="Your name" pattern="(?=.*[a-z])(?=.*[A-Z]).{3,}" required>
                             <input type="email" id="email" name="email" placeholder="Email" required>
                             <input type="tell-more" id="tell-more" name="tell-more" placeholder="Tell more" pattern="{3,}" required>
-                            <input type="button" value="Send Request" onclick="">
+                            
+                            <button class="button-send-request" type="button" onclick="" >send request
+                                <div class="shadow"></div>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -264,6 +284,5 @@
                     </div>
             </footer>
         </main>
-    </div>
-</body>
+    </body>
 </html>
