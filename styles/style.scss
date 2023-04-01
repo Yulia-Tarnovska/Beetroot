@@ -129,6 +129,7 @@
                 margin: 30px 0 20px 20px;
                 background: radial-gradient(circle, $color-background, $color-blue);
                 border-radius: 50%;
+                -moz-border-radius: 50%;
                 transition: 0.3s ease;
             }
 
@@ -680,6 +681,7 @@
                 position: relative;
                 border: 1px solid #515773;
                 border-radius: 32px;
+                -moz-border-radius:32px;
                 margin: 0 auto;
                 height: 100vh;
                 min-height: 200px;
@@ -717,6 +719,7 @@
                 .video-player {
                     opacity: 0.2;
                     border-radius: 8px;
+                    -moz-border-radius: 8px;
                 }
             }
 
