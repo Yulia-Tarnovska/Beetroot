@@ -1,0 +1,1191 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+@import '../fonts/fonts.scss';
+
+.body-wrapper {
+    background: linear-gradient(183.11deg, rgba(22, 25, 38, 0) 46.73%, #161926 63.21%);
+    background-image: url(./assets/first-screen-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color:  #161926;
+    box-sizing: border-box;
+
+    .main-header {
+
+
+        .header-wrapper {
+            padding-left: 135px;
+            padding-right: 135px;
+            margin-top: 30px;
+            background: linear-gradient(270deg, rgba(22, 25, 38, 0.5) 0%, rgba(22, 25, 38, 0) 24.1%, rgba(22, 25, 38, 0) 47.19%), rgba(22, 25, 38, 0.02);
+            backdrop-filter: blur(4.5px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+
+            @media (max-width: 1024px) {
+                padding-left: 50px;
+            }
+
+            @include responsive (tablet) {
+                margin-top: 20px;
+            }
+
+            @include responsive (mobile) {
+                margin-top: 10px;
+            }
+
+            .logo {
+                padding-top: 24px;
+                width: 107px;
+            }
+
+            .menu ul {
+                display: flex;
+                gap: 30px;
+
+                @include responsive (tablet) {
+                    display: none;
+                }
+
+                @include responsive (mobile) {
+                    display: none;
+                }
+            }
+
+            .menu li {
+                a {
+                    @include text('Lato', normal, 400, 14px, 24px, 0.08em);
+                    color: $color-white;
+                    text-decoration: none;
+
+                    @media (max-width: 1024px) {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $color-blue;
+                        text-decoration: underline;
+                    }
+
+                    &:active {
+                        text-decoration-color: linear-gradient(96.73deg, #53F3CD 6.73%, rgba(83, 243, 205, 0) 116.9%);
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .header-info-wrapper {
+
+        .header-info-main-text {
+            padding-top: 150px;
+            @include text('Playfair Display', normal, 400, 44px, 52px, 0);
+            color: $color-white;
+
+            @include responsive (tablet) {
+               
+                font-size: 18px;
+                line-height: 18px;
+                padding-top: 20px;
+            }
+
+            @include responsive (mobile) {
+              
+                font-size: 14px;
+                line-height: 15px;
+                padding-top: 20px;
+            }
+
+            p {
+                @include text('Playfair Display Italic', normal, 400, 44px, 52px, 0);
+
+                @include responsive (tablet) {
+                    font-size: 20px;
+                    line-height: 18px;
+                }
+    
+                @include responsive (mobile) {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                .text-blue-color {
+
+                @include text('Playfair Display Italic', normal, 400, 44px, 52px, 0);
+                color: $color-blue;
+
+                @include responsive (tablet) {
+                    font-size: 20px;
+                }
+    
+                @include responsive (mobile) {
+                    font-size: 17px;
+                }
+
+                }
+            }
+        }
+
+        .header-info-bottom-text {
+            @include text('Lato', normal, 300, 18px, 26px, 0);
+            color: $color-white;
+            opacity: 0.8;
+            padding-top: 20px;
+
+            @include responsive (tablet) {
+                padding-top: 50px;
+                font-size: 17px;
+                line-height: 20px;
+            }
+
+            @include responsive (mobile) {
+                font-size: 14px;
+                padding-top: 30px;
+                line-height: 18px;
+            }
+        }
+
+        .button-join-now {
+            @include text('Lato', normal, 700, 20px, 20px, 0.08em);
+            text-transform: uppercase;
+            color: $color-green;
+            margin-top: 50px;
+            background-color: transparent;
+            border: none;
+            margin-bottom: 155px;
+
+            @include responsive (tablet) {
+                margin-bottom: 55px;
+                font-size: 18px;
+            }
+
+            @include responsive (mobile) {
+                margin-bottom: 35px;
+                font-size: 16px;
+            }
+
+            ::after {
+                content: "";
+                background: $color-green;
+                opacity: 0.3;
+                width: 112px;
+                height: 13px;
+            }
+        }
+    }
+
+    .main-wrapper {
+        padding-left: 135px;
+        padding-right: 135px;
+
+        @include responsive (tablet) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @include responsive (mobile) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        
+            
+            
+            .info-wrapper {
+                
+                padding-bottom: 120px;
+                display: flex;
+                justify-content: center;
+
+                @include responsive (tablet) {
+                    padding-bottom: 60px;                          
+                }
+
+                @include responsive (mobile) {
+                    padding-bottom: 40px;          
+                }
+
+                .info-image {
+                    max-width: 570px;
+                    height: 670px;
+
+                    @media (max-width: 1024px) {
+                        display: none;
+                    }
+
+                }
+
+                .info-box {
+                    background: #161926;
+                    opacity: 0.9;
+                    padding-top: 45px;
+                    padding-left: 100px;
+                    margin-left: -200px;
+                    align-self: center;
+
+                    @include responsive (tablet) {
+                        padding-left: 30px; 
+                        margin: 0;     
+                        padding-top: 25px;                     
+                    }
+
+                    @include responsive (mobile) {
+                        padding-left: 15px;      
+                        margin: 0; 
+                        padding-top: 20px;         
+                    }
+
+                    .info-section {
+                        display: flex;
+                        justify-content: space-around;
+                        gap: 56px;
+                        
+                        @media (max-width: 1200px) {
+                            display: block;
+                                                      
+                        }
+
+                       @include responsive (tablet) {
+                            display: block;
+                                                      
+                        }
+
+                        @include responsive (mobile) {
+                            display: block;
+                                                      
+                        }
+
+                        &:not-last-of-type() {
+                            border-bottom: 1px solid #85BBB1;
+                        }
+
+                        &.last-info-section {
+                            
+                            .info-title {
+                                padding-bottom: 12px;
+                              
+                                text-align: center;
+                                p {
+                                
+                                    &:first-of-type {
+                                    
+
+                                        &::before {
+                                            content: none;
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .info-title {
+                           
+                            text-align: center;
+                            padding-bottom: 12px;
+
+                            @media (max-width: 1200px) {
+                                height: 125px;
+                            }
+                            p {
+                        
+
+                            &:first-of-type {
+                                @include text('Playfair Display', normal, 400, 68px, 72px, 0);
+                                text-align: center;
+                                color: $color-white;
+                                display: inline; 
+
+                                @media (max-width: 1200px) {
+                                    font-size: 45px;
+                                }
+
+                                @include responsive (tablet) {
+                                    font-size: 40px;
+                                }
+
+                                @include responsive (mobile) {
+                                    font-size: 25px;
+                                }
+
+                                &::before {
+                                    content: '\0024';
+                                    font-size: 40px;
+                                    padding-right: 10px;
+
+                                    @include responsive (mobile) {
+                                        font-size: 25px;
+                                    }
+                                }
+                            }
+
+                            &:last-of-type {
+                                @include text('Lato', normal, 300, 18px, 26px, 0);
+                                color: $color-white;
+                                text-align: center;
+                                opacity: 0.8;
+                                
+                            }  
+                              
+                    }
+                }
+
+
+                    .info-text {
+                        max-width: 400px;
+                        @include text('Lato', normal, 300, 18px, 26px, 0);
+                        color: $color-white;
+                        opacity: 0.8;
+
+                        p {
+                        
+                        @include responsive (tablet) {
+                            font-size: 16px;
+                        }
+
+                        @include responsive (mobile) {
+                            font-size: 15px;
+                        }
+    
+                    }
+                    }
+                    .button-info {
+
+                        .button-contact-sales {
+                            @include text('Lato', normal, 700, 20px, 20px, 0.08em);
+                            text-transform: uppercase;
+                            color: $color-green;
+                            margin-top: 50px;
+                            background-color: transparent;
+                            border: none;
+
+                            @include responsive (tablet) {
+                                font-size: 18px;
+                            }
+    
+                            @include responsive (mobile) {
+                                font-size: 16px;
+                            }
+
+                                &::after {
+                                    content: "";
+                                    background: $color-green;
+                                    opacity: 0.3;
+                                    width: 112px;
+                                    height: 13px;
+                                }
+                        }
+                    }
+                }
+            }
+    }
+
+        .benefits-wrapper {
+            padding-bottom: 60px;
+          
+            @include responsive (tablet) {
+                padding-bottom: 0;
+            }
+
+            @include responsive (mobile) {
+                padding-bottom: 0;
+            }
+
+            .benefits-section {
+                display: flex;
+                justify-content: space-around;
+                gap: 30px;
+                flex-wrap: wrap;
+
+                @include responsive (tablet) {
+                    display: block;
+                }
+
+                @include responsive (mobile) {
+                    display: block;
+                }
+
+                .benefits-item {
+                    width: 45%;
+                    border-top: 1px solid #515773;
+                    margin-bottom: 80px;
+
+                    @include responsive (tablet) {
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
+    
+                    @include responsive (mobile) {
+                        width: 100%; 
+                        margin-bottom: 15px;
+                    }
+
+                    .benefits-title {
+                        padding-top: 50px;
+                        box-shadow: 146px;
+                        @include text('Playfair Display', normal, 400, 40px, 48px, 0);
+                        color: $color-white;
+
+                        @include responsive (tablet) {
+                            font-size: 20px;
+                        }
+        
+                        @include responsive (mobile) {
+                            font-size: 17px; 
+                        }
+
+                        &:first-of-type {
+                            padding-left: 30px;
+
+                            @include responsive (tablet) {
+                                padding-left: 10px;
+                            }
+            
+                            @include responsive (mobile) {
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                        .text-blue-color {
+                            @include text('Playfair Display Italic', normal, 400, 40px, 48px, 0);
+                            color: $color-blue;
+
+                            @include responsive (tablet) {
+                                font-size: 20px;
+                            }
+            
+                            @include responsive (mobile) {
+                                font-size: 17px;
+                            }
+                        }
+                    
+            }
+                .benefits-text {
+                    padding-left: 30px;
+                    @include text('Lato', normal, 300, 18px, 26px, 0);
+                    color: $color-white;
+                    opacity: 0.8;
+                    margin-top: 30px;
+
+                    @include responsive (tablet) {
+                        padding-bottom: 30px;
+                        padding-left: 10px;
+                    }
+    
+                    @include responsive (mobile) {
+                        padding-bottom: 15px;
+                        padding-left: 10px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        
+
+        .quote-wrapper {
+           
+            background: linear-gradient(0deg, rgba(25, 28, 41, 0.84), rgba(25, 28, 41, 0.84)), url(./assets/quote-background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0 auto 120px;
+
+            @include responsive (tablet) {
+                background-image: none;
+               
+            }
+
+            @include responsive (mobile) {
+                background-image: none;
+               
+            }
+ 
+            img {
+                width: 100px;
+                height: 81px;
+                padding-top: 72px;
+                padding-left: 100px;
+                position: absolute;
+            }
+
+            p {
+                &:first-of-type {
+                    width: auto;
+                    max-width: 710px;
+                    @include text('Lato', normal, 400, 32px, 46px, 0.04em);
+                    color: $color-white;
+                    padding-top: 100px;
+                    padding-left: 160px;
+
+                    @media (max-width: 1024px) {
+                        font-size: 22px;
+                        padding-top: 40px;
+                        padding-left: 100px;
+                    }
+
+                    @include responsive (tablet) {
+                        font-size: 18px;
+                        padding-top: 30px;
+                        padding-left: 60px;
+                    }
+        
+                    @include responsive (mobile) {
+                        
+                        font-size: 15px;
+                        padding-top: 30px;
+                        padding-left: 30px;
+                    }
+                }
+            }
+
+            p {
+                &:last-of-type {
+                    @include text('Playfair Display Italic', normal, 400, 20px, 20px, 0.08em);
+                    color: $color-white;
+                    padding-top: 40px;
+                    padding-left: 160px;
+                    padding-bottom: 100px;
+
+                    @include responsive (tablet) {
+                        font-size: 18px;
+                        padding-top: 30px;
+                        padding-left: 60px;
+                        padding-bottom: 0;
+                    }
+        
+                    @include responsive (mobile) {
+                        font-size: 15px;
+                        padding-top: 30px;
+                        padding-left: 60px;
+                        padding-bottom: 0;
+                    }
+            }
+        }
+    }
+
+    .video-wrapper {
+        .video-player-wrapper {
+            position: relative;
+            border: 1px solid #515773;
+            border-radius: 32px;
+            margin: 0 auto;
+
+            @media (max-width: 1024px) {
+                height: 500px;
+                width: auto;
+            }
+
+            @include responsive (tablet) {
+                width: auto;
+                height: 250px;
+            }
+
+            @include responsive (mobile) {
+                width: auto;
+                height: 100px;
+            }
+
+            video {
+                max-width: 870px;
+            }
+            
+            img:first-child {
+                position: absolute;
+                left: 5px;
+                top: 50%;
+            }
+
+            img:last-child {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+            }
+
+            .video-player {
+                opacity: 0.2;
+                border-radius: 8px;
+            }
+        }
+            .video-text-wrapper {
+                padding-top: 50px;
+                padding-left: 135px;
+
+                @include responsive (tablet) {
+                    padding-left: 35px;
+                }
+
+                @include responsive (mobile) {
+                    padding-left: 25px;
+                }
+
+                .video-title {
+                    @include text('Playfair Display', normal, 400, 40px, 48px, 0);
+                    color: $color-white;
+
+                    @include responsive (tablet) {
+                        font-size: 20px;
+                    }
+
+                    @include responsive (mobile) {
+                        font-size: 17px;
+                    }
+                }
+                    .text-blue-color {
+                        @include text('Playfair Display', normal, 400, 40px, 48px, 0);
+                        color: $color-blue;
+
+                        @media (max-width: 1000px) {
+                            font-size: 30px;
+                        }
+
+                        @include responsive (tablet) {
+                            font-size: 25px;
+                        }
+    
+                        @include responsive (mobile) {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .video-text{
+                        padding-top: 20px;
+                        padding-bottom: 120px;
+                        max-width: 900px;
+                        @include text('Lato', normal, 300, 18px, 26px, 0);
+                        color: $color-white;
+                        opacity: 0.8;
+
+
+                        @include responsive (tablet) {
+                            font-size: 15px;
+                            padding-bottom: 50px;
+                        }
+    
+                        @include responsive (mobile) {
+                            font-size: 13px;
+                            padding-bottom: 25px;
+                        }
+                    }
+                
+                }
+        }
+
+        .pr-wrapper {
+            position: relative;
+            padding-bottom: 120px;
+
+            @include responsive (tablet) {
+                padding-bottom: 0;
+            }
+
+            @include responsive (mobile) {
+                padding-bottom: 0;
+            }
+
+            .promises-img {  
+                @include responsive (tablet) {
+                display: none;
+            }
+
+            @include responsive (mobile) {
+                display: none;
+            }
+    
+}
+
+            .promises-wrapper {
+                background: #161926;
+                opacity: 0.9;
+                position: absolute;
+                top: 45px;
+                right: 0;
+                
+                @include responsive (tablet) {
+                    right: 0;
+                    top: 10px;
+                    position: static;
+                }
+
+                @include responsive (mobile) {
+                    right: 0;
+                    position: static;
+                }
+
+                .promises-text1 {
+                    padding-top: 75px;
+
+                    @include responsive (tablet) {
+                        padding-top: 10px;
+                    }
+
+                    @include responsive (mobile) {
+                        padding-top: 10px;
+                    }
+                }
+
+                .promises-text2 {
+                    padding-top: 70px;
+
+                    @include responsive (tablet) {
+                        padding-top: 10px;
+                    }
+
+                    @include responsive (mobile) {
+                        padding-top: 10px;
+                    }
+
+                }
+
+                .promises-text {
+                    padding-left: 70px;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    gap: 100px;
+                
+                    @include responsive (tablet) {
+                        display: block;
+                        padding-left: 30px;
+                    }
+
+                    @include responsive (mobile) {
+                        display: block;
+                        padding-left: 30px;
+                    }
+
+                    .promises-section {
+                        width: 40%;
+
+                        @include responsive (tablet) {
+                            width: 100%;
+                        }
+    
+                        @include responsive (mobile) {
+                            width: 100%;
+                        }
+
+                        p {
+                        &:nth-of-type(1) {
+                            @include text('Playfair Display', normal, 400, 24px, 48px, 0);
+                            color: $color-white;
+
+                            @include responsive (tablet) {
+                                font-size: 18px;
+                            }
+        
+                            @include responsive (mobile) {
+                                font-size: 15px;
+                            }
+
+                            }
+                        }
+
+                        p {
+                        &:not(:nth-of-type(1)) {
+                            @include text('Lato', normal, 300, 18px, 26px, 0);
+                            color: $color-white;
+                            opacity: 0.8;
+                            padding-top: 15px;
+
+                            @include responsive (tablet) {
+                                padding-top: 5px;
+                            }
+        
+                            @include responsive (mobile) {
+                                padding-top: 5px;
+                                font-size: 15px;
+                            }
+                            }
+                        }
+                    }
+
+                    .button-join-now {
+                        @include text('Lato', normal, 700, 20px, 20px, 0.08em);
+                        text-transform: uppercase;
+                        color: $color-green;
+                        margin-top: 50px;
+                        background-color: transparent;
+                        border: none;
+                        margin-bottom: 155px;
+
+                        @include responsive (tablet) {
+                            margin-bottom: 55px;
+                            font-size: 18px;
+                        }
+            
+                        @include responsive (mobile) {
+                            margin-bottom: 35px;
+                            font-size: 16px;
+                        }
+            
+                        &::after {
+                            content: "";
+                            background: $color-green;
+                            opacity: 0.3;
+                            width: 112px;
+                            height: 13px;
+                        }
+                    }
+                }
+            }
+        }
+
+    .client-reviews {
+            padding-bottom: 100px;
+
+            @include responsive (tablet) {
+                padding-bottom: 30px;
+            }
+
+            @include responsive (mobile) {
+                padding-bottom: 15px;
+            }
+
+            .client-title {
+                @include text('Playfair Display', normal, 400, 40px, 48px, 0);
+                color: $color-white;  
+
+                @include responsive (tablet) {
+                    font-size: 25px;
+                }
+
+                @include responsive (mobile) {
+                    font-size: 18px;
+                }
+            }
+
+            .text-blue-color{
+                @include text('Playfair Display Italic', normal, 400, 40px, 48px, 0);
+                color: $color-blue;
+
+                @include responsive (tablet) {
+                    font-size: 25px;
+                }
+
+                @include responsive (mobile) {
+                    font-size: 18px;
+                }
+            }
+
+            .client-text {
+                @include text('Lato', normal, 300, 18px, 26px, 0);
+                color: $color-white;
+                opacity: 0.8;
+                padding-top: 20px;
+                padding-bottom: 50px; 
+            }
+
+            .client-reviews-section {
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+
+                @media (max-width: 1200px) {
+                    display: block;
+                }
+
+                @include responsive (tablet) {
+                    display: block;
+                } 
+
+                @include responsive (mobile) {
+                    display: block;
+                } 
+
+               
+                .section {
+                    &:nth-child(1) {
+                        background-image: url(./assets/client-reviews1.png);
+                        background-color: rgba(25, 28, 41, 0.6);
+                        background-blend-mode: multiply;
+                        
+                            @media (max-width: 1200px) {
+                                margin-bottom: 50px;
+                            }
+            
+                            @include responsive (tablet) {
+                                margin-bottom: 50px;
+                            } 
+            
+                            @include responsive (mobile) {
+                                margin-bottom: 50px;
+                        }
+
+                    }
+                    &:nth-child(2) {
+                        
+                        background-image: url(./assets/client-reviews2.png);
+                        background-color: rgba(25, 28, 41, 0.6);
+                        background-blend-mode: multiply;
+                        
+                            @media (max-width: 1200px) {
+                                margin-bottom: 50px;
+                            }
+            
+                            @include responsive (tablet) {
+                                margin-bottom: 50px;
+                            } 
+            
+                            @include responsive (mobile) {
+                                margin-bottom: 50px;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        background-image: url(./assets/client-reviews3.png);
+                        background-color: rgba(25, 28, 41, 0.6);
+                        background-blend-mode: multiply;
+                        
+                            @media (max-width: 1200px) {
+                                margin-bottom: 50px;
+                            }
+            
+                            @include responsive (tablet) {
+                                margin-bottom: 50px;
+                            } 
+            
+                            @include responsive (mobile) {
+                                margin-bottom: 50px;
+                        }
+                    }
+
+                    p {
+                        &:nth-child(1) {
+                            padding: 30px 40px 0 40px;
+                            @include text('Latoc', normal, 400, 16px, 26px, 0);
+                            color: $color-white;
+                            opacity: 0.8;
+                        }
+
+                        &:nth-child(2) {
+                            @include text('Playfair Display Italic', normal, 400, 20px, 20px, 0.08em);
+                            color: $color-white;
+                            padding-left: 40px;
+                            padding-bottom: 30px;
+                            vertical-align: bottom;
+                        }
+                    }
+
+                    }
+                
+            
+        }
+    } 
+
+        .footer-wrapper {
+            border-top: 1px solid #515773;
+            border-bottom: 1px solid #515773;
+            display: flex;
+            justify-content: space-between;
+            gap: 230px;
+
+            @media (max-width: 1440px) {
+                display: block;
+            }
+
+            @include responsive (tablet) {
+                display: block;
+            }
+
+            @include responsive (mobile) {
+                display: block;
+            }
+
+            .contact-text {
+                padding-top: 80px;
+
+                @include responsive (tablet) {
+                    padding-top: 40px;
+                }
+    
+                @include responsive (mobile) {
+                    padding-top: 20px;
+                }
+
+                span {
+                    &.footer-title {
+                        @include text('Playfair Display Italic', normal, 400, 40px, 39px, 0);
+                        color: $color-white;
+
+                        @include responsive (tablet) {
+                            font-size: 23px;
+                        }
+        
+                        @include responsive (mobile) {
+                            font-size: 18px;
+                        }
+                    }
+
+                    &.text-blue-color {
+                        @include text('Playfair Display Italic', normal, 400, 40px, 39px, 0);
+                        color: $color-blue;
+
+                        @include responsive (tablet) {
+                            font-size: 23px;
+                        }
+        
+                        @include responsive (mobile) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                p {
+                    @include text('Lato', normal, 300, 18px, 26px, 0);
+                    color: $color-white;
+                    opacity: 0.8;
+                    padding-top: 30px;
+
+                    @include responsive (mobile) {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            form {
+                display: grid;
+            
+            input {
+                margin-top: 60px;
+                width: 470px;
+                border: none;
+                border-bottom: 1px solid #515773; 
+                background-color: rgba(25, 28, 41, 0.6);
+
+                @include responsive (tablet) {
+                    width: 280px;
+                }
+
+                @include responsive (mobile) {
+                    width: 200px;
+                }
+                
+                // opacity: 0.1;
+
+                &[type=button] {
+                    border: none;
+                    text-align: left;
+                    @include text('Lato', normal, 700, 20px, 20px, 0.08em);
+                    text-transform: uppercase;
+                    color: $color-green;
+                    margin-top: 50px;
+                    background-color: transparent;
+                    border: none;
+                    margin-bottom: 155px;
+                    
+                    @include responsive (tablet) {
+                        margin-bottom: 55px;
+                        font-size: 18px;
+                    }
+        
+                    @include responsive (mobile) {
+                        margin-bottom: 35px;
+                        font-size: 16px;
+                    }
+
+                    &::after {
+                        content: "";
+                        background: $color-green;
+                        opacity: 0.3;
+                        width: 112px;
+                        height: 13px;
+                    }
+                }
+
+                &::placeholder {
+                    @include text('Playfair Display Italic', normal, 400, 18px, 20px, 0.08em);       
+                    color: $color-white;
+                    opacity: 0.5;
+                    
+                }
+            }
+        }
+    }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            .footer-text1 {
+                @include text('Lato', normal, 300, 14px, 26px, 0);   
+                color: $color-white;
+                opacity: 0.6;
+
+                @include responsive (tablet) {
+                    font-size: 10px;
+                    line-height: 15px;
+                }
+
+                @include responsive (mobile) {
+                    font-size: 10px;
+                    line-height: 15px;
+                    
+                }
+            }
+
+            .footer-text2 {
+                @include text('Lato', normal, 400, 14px, 24px, 0.08em);   
+                color: $color-white;
+
+                @include responsive (tablet) {
+                    font-size: 10px;
+                    line-height: 15px;
+                   
+                }
+
+                @include responsive (mobile) {
+                    font-size: 10px;
+                    line-height: 15px;
+                   
+                }
+            }
+
+                .bottom-links {
+                    display: flex;
+                    gap: 30px;
+
+                    @include responsive (tablet) {
+                        gap: 15px;
+                    }
+    
+                    @include responsive (mobile) {
+                        gap: 10px;
+                    }
+
+                    p {
+                        @include text('Lato', normal, 400, 14px, 24px, 0.08em);   
+                        color: $color-white;
+
+                        @include responsive (tablet) {
+                            font-size: 10px;
+                            line-height: 15px;
+                        }
+        
+                        @include responsive (mobile) {
+                            font-size: 10px;
+                            line-height: 15px;
+                        }
+
+                            }
+                    }
+                
+                }
+            }
+        }
+ 
+        div, section {
+            width: auto;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+     
+
+     
