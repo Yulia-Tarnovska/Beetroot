@@ -1,0 +1,101 @@
+.item {
+  width: 300px;
+  height: 400px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin: 30px;
+}
+
+.flip-item-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 298px;
+  height: 400px;
+}
+
+.item:hover .flip-item-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.item:hover .flip-item-back {
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.flip-item-front, .flip-item-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.flip-item-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 25px;
+}
+
+.flip-item-back {
+  background-color: white;
+  color: black;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.flip-item-back .title {
+  font-size: 60px;
+  font-weight: 550;
+}
+.flip-item-back .bottom i {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+.flip-item-back .main-img i {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+.fa-solid .flip-item-back.fa-heart {
+  color: red;
+}
+.fa-solid .flip-item-back.fa-diamond {
+  color: red;
+}
+.flip-item-back .top {
+  padding-top: 15px;
+  padding-left: 15px;
+  text-align: start;
+}
+.flip-item-back .top p {
+  margin: 0 8px;
+}
+.flip-item-back .bottom {
+  padding-top: 15px;
+  padding-right: 15px;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  text-align: end;
+}
+.flip-item-back .bottom p {
+  margin: 0 8px;
+}
