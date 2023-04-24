@@ -55,41 +55,41 @@ playList.forEach((item)=>{
 
 //2
 
-let modal = document.getElementById("myModal");
-let btn = document.getElementById("myBtn");
-let span = document.getElementsByClassName("close")[0];
+// let modal = document.getElementById("myModal");
+// let btn = document.getElementById("myBtn");
+// let span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
 
-span.onclick = function() {
-  modal.style.display = "none";
+// span.onclick = function() {
+//   modal.style.display = "none";
 }
 
 
 //3
 
-function makeRed() {
-  clearLight();
-  document.getElementById('redLight').style.backgroundColor = "red";
-};
-function makeYellow() {
-  clearLight();
-  document.getElementById('yellowLight').style.backgroundColor = "yellow";
-};
-function makeGreen() {
-  clearLight();
-  document.getElementById('greenLight').style.backgroundColor =  "green";
-};
+// function makeRed() {
+//   clearLight();
+//   document.getElementById('redLight').style.backgroundColor = "red";
+// };
+// function makeYellow() {
+//   clearLight();
+//   document.getElementById('yellowLight').style.backgroundColor = "yellow";
+// };
+// function makeGreen() {
+//   clearLight();
+//   document.getElementById('greenLight').style.backgroundColor =  "green";
+// };
 
 
-function clearLight() {
-  document.getElementById("redLight").style.backgroundColor =  "black";
-  document.getElementById("yellowLight").style.backgroundColor = "black";
-  document.getElementById("greenLight").style.backgroundColor = "black";
-};
+// function clearLight() {
+//   document.getElementById("redLight").style.backgroundColor =  "black";
+//   document.getElementById("yellowLight").style.backgroundColor = "black";
+//   document.getElementById("greenLight").style.backgroundColor = "black";
+// };
 
-document.getElementById("red").onclick = makeRed;
-document.getElementById("yellow").onclick = makeYellow;
-document.getElementById("green").onclick = makeGreen;
+// document.getElementById("red").onclick = makeRed;
+// document.getElementById("yellow").onclick = makeYellow;
+// document.getElementById("green").onclick = makeGreen;
