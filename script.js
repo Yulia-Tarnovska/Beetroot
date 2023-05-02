@@ -18,33 +18,41 @@
 // });
 
 //2
-let body = document.getElementsByTagName("body")[0];
-let ourTable = document.createElement("table");
-let ourTableBody = document.createElement("tbody");
-ourTable.createCaption().innerHTML = "Random numbers";
-let arr = [];
-let cell;
+// let body = document.getElementsByTagName("body")[0];
+// let ourTable = document.createElement("table");
+// let ourTableBody = document.createElement("tbody");
+// ourTable.createCaption().innerHTML = "Random numbers";
+// let arr = [];
+// let cell;
 
-for (let i = 0; i < 50; i++) {
-    let row = document.createElement("tr");
-      cell = document.createElement("td");
-      let cellText = document.createTextNode(Math.floor(Math.random() * 11) + i);
-      cell.appendChild(cellText);
-      row.appendChild(cell);
-      arr.push(cellText);
+// for (let i = 0; i < 50; i++) {
+//     let row = document.createElement("tr");
+//       cell = document.createElement("td");
+//       let cellText = document.createTextNode(Math.floor(Math.random() * 11) + i);
+//       cell.appendChild(cellText);
+//       row.appendChild(cell);
+//       arr.push(cellText.nodeValue);
     
-    ourTableBody.appendChild(row);
-  }
+//     ourTableBody.appendChild(row);
+//   }
  
-ourTable.appendChild(ourTableBody);
-body.appendChild(ourTable);
+// ourTable.appendChild(ourTableBody);
+// body.appendChild(ourTable);
  
-let title = document.getElementsByTagName("caption")[0];
-title.addEventListener("click", (cellText) => {
-    cellText.preventDefault();
-    arr.sort(function(a, b){return a-b});
-    for (let i = 0; i < 50; i++) {
-            cell.innerText = arr[i];
+// let title = document.getElementsByTagName("caption")[0];
+// title.addEventListener("click", (cellText) => {
+//     cellText.preventDefault();
+//     arr.sort(function(a, b){return a-b});
+
+//     let cell_arr = document.getElementsByTagName("td");
+//     for (let i = 0; i < 50; i++) {
+        
+//         cell_arr[i].innerText = arr[i];
            
-        }
-});
+//         }
+// });
+
+//3
+let text = document.getElementById("div-text");
+text.style.border = "2px solid black";
+text.style.width = "400px";

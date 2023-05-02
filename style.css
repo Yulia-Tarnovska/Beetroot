@@ -1,8 +1,12 @@
 #div-text {
     font-size: 50px;
     margin: 100px;
-}
+    padding: 50px;
 
+    /*  3  */
+    resize: both;
+    overflow: auto;
+}
 
 th, td, caption {
     font-size: 25px;
