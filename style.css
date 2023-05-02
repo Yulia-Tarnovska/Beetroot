@@ -1,0 +1,16 @@
+#div-text {
+    font-size: 50px;
+    margin: 100px;
+}
+
+
+th, td, caption {
+    font-size: 25px;
+  }
+
+table {
+    text-align: center;
+    margin: 100px;
+    width: 100px;
+    border: 2px solid black;
+}  
