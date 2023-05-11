@@ -4,10 +4,9 @@ body{
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('./style/clouds.jpg');
+    background-image: url('https://images.unsplash.com/photo-1550507894-975103845538?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
     background-repeat: no-repeat;
     background-size: cover;
-   
 }
 
 .container {
@@ -28,69 +27,36 @@ body{
 .input > input {
     border: none;
     outline: none;
-    border-radius: 35px;
+    padding: 0.3rem;
+    border-radius: 18px;
     color: rgb(255 255 255);
-    background: white;
+    background: #7c7c7c2b;
     font-family: 'Raleway', sans-serif;
-    width: 250px;
-    height: 45px;
-    font-size: 20px;
-    text-align: center;
-    color: black;
 }
 
 button.button {
-    
+    border: none;
     width: 29px;
     padding: 6px;
     border-radius: 20px;
-    background: transparent;
+    background: #7c7c7c2b;
     color: white;
     font-family: 'Raleway', sans-serif;
     transition: (.5s);
-   outline: none;
-   border: none;
-}
-
-button.button:hover {
-    border: none;
 }
 
 button.button:focus{
     outline:none;
 }
 
+button.button:hover{
+    border: 1px solid rgb(122, 112, 112) 
+}
 
-.displayWeater {
+.displayWeather{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Raleway', sans-serif;
-    width: 250px;
-    height: auto;
-    color: black;
-    font-size: 25px;
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 20px;
-    position: relative;
-    /* display: none; */
-}
-.displayWeater span {
-    font-size: 13px;
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    cursor: pointer;
-}
-
-.input button i {
-    font-size: 30px;
-
-}
-
-.input button i:hover {
-    cursor: pointer;
 }

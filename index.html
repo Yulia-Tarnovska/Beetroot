@@ -2,11 +2,23 @@
 <head>
     <meta charset="UTF-8">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style/reset.scss">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="wrapper">
+        <div class="input">
+            <input type="text" class="inputValue" placeholder="Enter location">
+            <button class="button"><i class="fa fa-search"></i></button>
+        </div>
 
-  
+        <div class="displayWeater">
+            <span id="close">X</span>
+            <h1 class="temp"----℃></h1>
+            <p class="desc">---</p>
 
+        </div>
+    </div>
 
 <script src="./script.js"></script>
 </body>
