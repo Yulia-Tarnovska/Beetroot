@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(./Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(./Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(./Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+  font-family: "Open Sans italic";
+  src: url(./Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
