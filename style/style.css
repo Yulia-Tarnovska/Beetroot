@@ -1,0 +1,39 @@
+.top {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.clock-item {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+}
+
+.clocks {
+    display: flex;
+    justify-content: center;
+    gap: 115px;
+}
+
+.time {
+    background-color: green;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.date {
+    background-color: blue;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.delete {
+    background-color: red;
+    font-size: 15px;
+    font-weight: 500;
+}
