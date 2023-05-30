@@ -1,16 +1,20 @@
-import Blog_name from "./Blog_name/Blog_name";
-import Banner from "./Banner/Banner";
-import Main from "./Main/Main"
+import './App.scss'
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import Weather from "./Weather/Weather";
 import React from "react";
 
 function App() {
     return (
-        <>
-        <Blog_name></Blog_name>
-        <Banner></Banner>
-        <Main></Main>
-        </>
-    );
+        <div>
+            <div className='main-wrapper'>
+           <Header></Header>
+           <Weather></Weather>
+           <Footer></Footer>
+           </div>
+        </div>
+        )
 }
+
 
 export default App;
