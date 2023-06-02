@@ -1,14 +1,12 @@
-import Blog_name from "./Blog_name/Blog_name";
-import Banner from "./Banner/Banner";
-import Main from "./Main/Main"
-import React from "react";
+import React from 'react';
+import Header from './Header/Header';
+import Form from './Form/Form';
 
 function App() {
     return (
         <>
-        <Blog_name></Blog_name>
-        <Banner></Banner>
-        <Main></Main>
+        <Header></Header>
+        <Form></Form>
         </>
     );
 }
