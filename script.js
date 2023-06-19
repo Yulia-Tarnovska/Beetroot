@@ -4,9 +4,8 @@ function menuOnClick() {
     document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
-
 let formMessage = document.getElementById('leave-message');
-let messageSendButton = document.getElementsByClassName('btn-primary')[1];
+let messageSendButton = document.getElementsByClassName('send-button')[0];
 let messageCloseButton = document.getElementById('messageCloseButton');
 let message = document.getElementsByClassName('message-sent-alert')[0];
 const modalContent = document.getElementById('exampleModal');

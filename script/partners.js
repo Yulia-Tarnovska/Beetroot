@@ -55,7 +55,6 @@ function createLists(data) {
             nameList.add(item.name);
             typeList.add(item.brewery_type);
         })
-
         createFilters();
     }
 }

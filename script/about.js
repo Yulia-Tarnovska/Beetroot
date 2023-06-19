@@ -13,27 +13,17 @@ let aboutSubmit = document.getElementById('aboutSubmit');
             }
 
               if(formAbout.elements[i].type === 'email'){
-                function checkEmail() {
                     let regEx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
                     if(!regEx.test(formAbout.elements[i].value))
                     {
                     alert('Wrong email format');
-                    }
+                    return false;
                 }
-                checkEmail();
+            
               }
-           
           }
-       
-        aboutSubmit.addEventListener('click', (e) => {
-            e.preventDefault();
-            aboutAlert.style.display = 'block';
-            formAbout.reset();
-                });
-                 
-            aboutCloseButton.addEventListener('click', (e) => {
-                e.preventDefault();
-                aboutAlert.style.display = 'none';
-                });
-        }; 
-      };
+          alert('Your message is sent');
+          formAbout.reset();
+          return false;
+        }
+      }
