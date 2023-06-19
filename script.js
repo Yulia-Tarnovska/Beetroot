@@ -24,19 +24,16 @@ window.onload = function () {
             }
 
             if (formMessage.elements[i].type === 'email') {
-                function checkEmail() {
                     let regEx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
                     if (!regEx.test(formMessage.elements[i].value)) {
                         alert('Wrong email format');
-                    }
+                        return false;
                 }
-                checkEmail();
             }
         }
         alert('Message is sent!');
         formMessage.reset();
        
-
         msModal.hide();
         return false;
     };
