@@ -1,0 +1,90 @@
+@import '../fonts/fonts.css';
+@import './mixins.scss';
+@import './variables.scss';
+@import './header.scss';
+@import './footer.scss';
+ 
+
+.wrapper {
+    background-color: $color-dark-blue;
+    padding: 60px 50px;
+
+    .menu-wrapper {
+
+        h1 {
+            color: $color-white;
+            @include text ('Wix-Madefor-SemiBold', 70px); 
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 50px;
+
+            @include responsive (tablet) {
+                font-size: 40px;
+            }
+    
+            @include responsive (mobile) {
+                font-size: 40px;
+            }
+        }
+
+        .menu-img {
+                width: 100%;
+                height: auto;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                margin: 0 auto;
+
+                @media (max-width: 1400px) {
+                    display: none;
+                }
+            }
+
+           
+            .carousel {
+                padding-bottom: 70px;
+    
+                .carousel-indicators {
+                    gap: 40px;
+    
+                    button {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 100%;
+                        background-color: transparent;
+                        border: 1px solid $color-white;
+    
+                        &.active {
+                            background-color: $color-white;
+                        }
+                    }
+                }
+            }
+    
+            .menu-items-wrapper {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                padding-top: 90px;
+    
+                @include responsive (tablet) {
+                    display: block;
+                }
+        
+                @include responsive (mobile) {
+                    display: block;
+                }
+
+                .menu-item {
+                    background-color: $color-white;
+
+                    img {
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }

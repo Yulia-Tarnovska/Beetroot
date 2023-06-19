@@ -1,0 +1,295 @@
+@import '../fonts/fonts.css';
+@import './mixins.scss';
+@import './variables.scss';
+@import './header.scss';
+ 
+
+.footer-wrapper {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+
+    @include responsive (tablet) {
+     display: block;
+     padding-top: 20px;
+    }
+
+    @include responsive (mobile) {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .footer-section {
+        h2 {
+            @include text('OpenSans', 18px);
+            color: $color-yellow-bright;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+
+            @include responsive (tablet) {
+                font-size: 30px;
+                padding-top: 30px;
+               }
+       
+               @include responsive (mobile) {
+                font-size: 30px;
+                padding-top: 30px;
+               }
+        }
+
+        .map-wrapper {
+            position: relative;
+            width: 300px;
+            height: 200px;
+
+            #marker {
+                width: 106px;
+                height: 106px;
+
+            }
+        }
+
+        p {
+            @include text('YatraOne-Regular', 16px);
+            color: $color-white;
+
+            &:nth-of-type(3) {
+                padding-top: 25px;
+               
+            }
+
+            @include responsive (tablet) {
+                font-size: 20px;
+               }
+       
+               @include responsive (mobile) {
+                font-size: 20px;
+               }
+            }
+        }
+    }
+
+
+.message-wrapper {
+
+        .message-sent-alert {
+            display: none;
+            position: absolute;
+            background-color: $color-dark-blue;
+            @include text('ArchitectsDaughter-Regular', 27px);
+            color: $color-white;
+            max-width: 250px;
+            height: auto;
+            margin: 0 auto;
+            border: 1px solid $color-white;
+            border-radius: 10%;
+            bottom: -35%;
+            left: 40%;
+            margin: 40% auto;
+
+            h1 {
+                text-align: center;
+            }
+
+            #messageCloseButton {
+                background-color:  $color-yellow;
+                @include text('OpenSans', 18px);
+                color: $color-white;
+                width: 100px;
+                margin: 20px 30%;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $color-white;
+                    color: $color-yellow-bright;
+                }
+            }
+        }
+
+    .m-screen {
+        max-width: 450px;
+        height: auto;
+
+        @include responsive (tablet) {
+            margin: 0 auto;
+            max-width: 320px;
+           }
+   
+           @include responsive (mobile) {
+            margin: 0 auto;
+            max-width: 300px;
+           }
+
+        .m-title {
+                font-family: 'ArchitectsDaughter-Regular';
+                color: $color-dark-blue; 
+        }
+    }
+    
+    #leave-message {
+        input {
+            width: 415px;
+            height: auto;
+            margin-bottom: 10px;
+            @include text('ArchitectsDaughter-Regular', 15px);
+
+            @include responsive (tablet) {
+                font-size: 20px;
+                max-width: 290px;
+               }
+       
+               @include responsive (mobile) {
+                font-size: 20px;
+                max-width: 280px;
+               }
+        }
+
+        #message {
+            width: 415px;
+            height: 100px;
+            resize: none;
+            overflow: auto;
+            margin-top: 3px;
+            @include text('ArchitectsDaughter-Regular', 15px);
+            
+            @include responsive (tablet) {
+                font-size: 20px;
+                max-width: 290px;
+               }
+       
+               @include responsive (mobile) {
+                font-size: 20px;
+                max-width: 280px;
+               }
+            }
+        }
+
+   .m-close-send{
+
+        button {
+            &:nth-of-type(1) {
+                background-color: $color-white;
+                @include text('ArchitectsDaughter-Regular', 15px);
+                color: $color-dark-blue;
+
+                &:hover {
+                    background-color: $color-dark-blue;
+                    color: $color-white;
+                }
+            }
+
+            &:nth-of-type(2) {
+                background-color: $color-dark-blue;
+                @include text('ArchitectsDaughter-Regular', 15px);
+                color: $color-white;
+
+                &:hover {
+                    background-color: $color-white;
+                    color: $color-dark-blue;
+                }
+            }
+        }
+    }
+
+    #message-button {
+        position: fixed;
+        background-color:  $color-yellow;
+        @include text('ArchitectsDaughter-Regular', 20px);
+        color: $color-white;
+        width: 195px;
+        height: 55px;
+        top: 90%;
+        right: 5%;
+        z-index: 9;
+
+        @include responsive (tablet) {
+            width: 200px;
+            height: 85px;
+            font-size: 25px;
+           }
+   
+           @include responsive (mobile) {
+            width: 200px;
+            height: 85px;
+            font-size: 25px;
+           }
+
+        &:hover {
+            cursor: pointer;
+            background-color: $color-white;
+            color: $color-yellow;
+        }
+    }
+
+    .sent {
+        .m-send{
+
+            button {
+                    background-color: $color-white;
+                    @include text('ArchitectsDaughter-Regular', 15px);
+                    color: $color-dark-blue;
+    
+                    &:hover {
+                        background-color: $color-dark-blue;
+                        color: $color-white;
+                    }
+                
+                    @include responsive (tablet) {
+                        font-size: 25px;
+                       }
+               
+                       @include responsive (mobile) {
+                        font-size: 25px;
+                       }
+                }
+            }
+
+        h1 {
+            @include text('ArchitectsDaughter-Regular', 40px);
+            color: $color-dark-blue;
+            text-align: center;
+        }
+    }
+}
+
+
+.footer-bottom {
+
+    .socials {
+        display: flex;
+        gap: 20px;
+
+        @include responsive (tablet) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+           }
+   
+           @include responsive (mobile) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+           }
+
+        img {
+            &:hover {
+                background-color: $color-yellow-bright;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+
+    p {
+        @include text('YatraOne-Regular', 16px);
+        color: $color-white;
+        padding-top: 15px;
+
+        @include responsive (tablet) {
+            font-size: 20px;
+           }
+   
+           @include responsive (mobile) {
+            font-size: 20px;
+           }
+    }
+}

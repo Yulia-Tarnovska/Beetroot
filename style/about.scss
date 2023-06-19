@@ -1,0 +1,264 @@
+@import '../fonts/fonts.css';
+@import './mixins.scss';
+@import './variables.scss';
+@import './header.scss';
+@import './footer.scss';
+ 
+
+.wrapper {
+    background-color: $color-dark-blue;
+    padding: 60px 50px;
+
+    @include responsive (tablet) {
+        display: block;
+        padding: 20px;
+    }
+
+    @include responsive (mobile) {
+        display: block;
+        padding: 20px;
+    }
+
+    .about-wrapper {
+        padding-top: 70px;
+        display: flex; 
+        justify-content: space-between;
+        gap: 70px;
+
+        @include responsive (tablet) {
+            display: block;
+        }
+
+        @include responsive (mobile) {
+            display: block;
+        }
+
+        .about-section {
+
+            @media (max-width: 1150px) {
+                background-image: url(../assets/about.jpg);
+                mix-blend-mode: hard-light; 
+            }
+
+            @include responsive (tablet) {
+                background-image: url(../assets/about.jpg);
+                mix-blend-mode: hard-light;
+            }
+    
+            @include responsive (mobile) {
+                background-image: url(../assets/about.jpg);
+                mix-blend-mode: hard-light;
+            }
+           
+
+            img {
+                max-width: 500px;
+                height: auto;
+
+                @media (max-width: 1150px) {
+                  
+                    display: none;
+                }
+
+                @include responsive (tablet) {
+                    display: none;
+                }
+        
+                @include responsive (mobile) {
+                    display: none;
+                }
+            }
+
+            h1 {
+                padding-top: 30px;
+                color: $color-white;
+                @include text ('YatraOne-Regular', 30px); 
+                text-transform: uppercase;
+                padding-bottom: 30px;
+
+                @include responsive (tablet) {
+                    font-size: 40px;
+                    text-align: center;
+                    padding-top: 30px;
+                }
+        
+                @include responsive (mobile) {
+                    font-size: 40px;
+                    text-align: center;
+                    padding-top: 30px;
+                }
+
+            }
+            
+            p {
+                color: $color-white;
+                @include text ('ArchitectsDaughter-Regular', 18px); 
+                line-height: 17px;
+                padding-bottom: 30px;
+                padding-right: 10px;
+
+                @include responsive (tablet) {
+                    font-size: 22px;
+                    line-height: 22px;
+                    padding-left: 15px;
+                }
+        
+                @include responsive (mobile) {
+                    font-size: 22px;
+                    line-height: 22px;
+                    padding-left: 15px;
+                }
+            }
+
+            form {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+
+                @media (max-width: 1150px) {
+                    display: block;
+                    text-align: center;
+                }
+
+
+                @include responsive (tablet) {
+                    display: block;
+                    text-align: center;
+                }
+        
+                @include responsive (mobile) {
+                    display: block;
+                    text-align: center;
+                }
+
+
+                .form-left {
+                    display: flex;
+                    flex-direction: column;
+                    width: 250px;
+                    height: 40px;
+                    display: inline-block;
+                }
+
+                input {
+                    margin-bottom: 10px;
+                    width: 250px;
+                    font-size: 20px;
+                }
+
+                .form-right {
+                    display: flex;
+                    flex-direction: column;
+
+                    input {
+
+                        @include responsive (tablet) {
+                            font-size: 18px;
+                            width: 250px;
+                        }
+                
+                        @include responsive (mobile) {
+                           
+                            font-size: 18px;
+                            width: 250px;
+                        }
+
+                        &#message {
+                            width: auto;
+                            height: 102px;
+
+                            @media (max-width: 1150px) {
+                                font-size: 20px;
+                                width: 250px;
+                                margin: 15px auto;
+                            }
+
+                            @include responsive (tablet) {
+                                font-size: 20px;
+                                width: 250px;
+                                margin: 15px auto;
+                               
+                            }
+                    
+                            @include responsive (mobile) {
+                                margin: 15px auto;
+                                font-size: 20px;
+                                width: 250px;  
+                            }
+                        }
+                    }
+
+                    button {
+                        width: 90px;
+                        height: 40px;
+                        align-self: end;
+                        background-color: $color-yellow;
+                        color: $color-white;
+                        @include text('YatraOne-Regular', 15px);
+
+                        @media (max-width: 1150px) {
+                            margin-bottom: 20px;
+                            font-size: 18px;
+                            align-self: center;
+                            width: 120px;
+                        }
+
+                        @include responsive (tablet) {
+                            margin-bottom: 20px;
+                            font-size: 18px;
+                            align-self: center;
+                            width: 120px;
+                        }
+                
+                        @include responsive (mobile) {
+                            margin-bottom: 20px;
+                            font-size: 18px;
+                            align-self: center;
+                            width: 100px;
+                        }
+
+                        &:hover {
+                            color: rgb(188, 188, 24);
+                            background-color: $color-white;
+                        }
+                    }
+                }
+            }
+
+            .about-alert {
+                display: none;
+                position: absolute;
+                background-color: $color-dark-blue;
+                @include text('ArchitectsDaughter-Regular', 27px);
+                color: $color-white;
+                max-width: 250px;
+                height: auto;
+                margin: 0 auto;
+                border: 1px solid $color-white;
+                border-radius: 10%;
+                bottom: -35%;
+                left: 40%;
+                margin: 40% auto;
+
+                h1 {
+                    text-align: center;
+                }
+
+                #aboutCloseButton {
+                    background-color:  $color-yellow;
+                    @include text('OpenSans', 18px);
+                    color: $color-white;
+                    width: 100px;
+                    margin: 20px 30%;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $color-white;
+                        color: $color-yellow-bright;
+                    }
+                }   
+            }
+
+        }
+    }
+}

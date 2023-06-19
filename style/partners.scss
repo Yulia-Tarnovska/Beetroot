@@ -1,0 +1,391 @@
+@import '../fonts/fonts.css';
+@import './mixins.scss';
+@import './variables.scss';
+@import './footer.scss';
+@import './header.scss';
+
+
+.wrapper {
+    background-color: $color-dark-blue;
+    padding: 50px;
+    
+    @include responsive (tablet) {
+        padding: 20px;
+    }
+
+    @include responsive (mobile) {
+        padding: 20px;
+    }
+    
+    .partners-wrapper {
+
+            h1 {
+                color: $color-white;
+                @include text ('Wix-Madefor-SemiBold', 70px); 
+                text-transform: uppercase;
+                text-align: center;
+                padding-top: 50px;
+
+                @include responsive (tablet) {
+                    font-size: 40px;
+                }
+        
+                @include responsive (mobile) {
+                    font-size: 40px;
+                }
+            }
+
+        .pages {
+            display: block;
+            padding-left: 20px;
+            text-align: end;
+
+            .per-page-items {
+                right: -30px;
+                bottom: 20px;
+                position: absolute;
+            }
+
+            label {
+                @include text ('YatraOne-Regular', 20px); 
+                padding-right: 10px;
+                color: $color-yellow-bright;
+
+                @include responsive (tablet) {
+                   padding-bottom: 10px;
+                }
+        
+                @include responsive (mobile) {
+                    padding-bottom: 10px;
+                }
+            }
+
+                #per-page {
+                        width: 50px;
+                        @include text ('YatraOne-Regular', 15px); 
+                        margin-right: 40px;
+        
+                            option {
+                                @include text ('YatraOne-Regular', 15px); 
+                            }
+                        }
+                    }
+            
+            .breweries-search {
+                padding-bottom: 70px;
+                text-align: center;
+
+                #brewery-search {
+                    width: 300px;
+
+                    @include responsive (tablet) {
+                        max-width: 400px;
+                     }
+             
+                     @include responsive (mobile) {
+                        max-width: 400px;
+                     }
+                }
+
+                label {
+                    @include text ('YatraOne-Regular', 20px); 
+                    padding-right: 10px;
+                    color: $color-yellow-bright;
+                    display: block;
+                    padding-top: 55px;
+    
+                    @include responsive (tablet) {
+                       padding-bottom: 10px;
+                    }
+            
+                    @include responsive (mobile) {
+                        padding-bottom: 10px;
+                    }
+                }
+
+                #button-search {
+                    width: 80px;
+                    height: 25px;
+                     @include text ('YatraOne-Regular', 16px); 
+                }
+            }
+
+            .filter-search {
+                position: relative;
+            }
+
+        .filter {
+            padding-top: 30px;
+
+            #clear-filters  {
+                background-color: $color-yellow;
+                @include text('YatraOne-Regular', 17px);
+                color: $color-white;
+                width: 130px;
+                height: 30px;
+                margin-top: 25px;
+                cursor: pointer;
+                margin: 0 auto;
+                display: inline-block;
+                padding-top: 5px;
+                margin-top: 30px;
+    
+                &:hover {
+                    cursor: pointer;
+                    background-color: $color-white;
+                    color: $color-yellow-bright;
+                }
+            }
+
+            .breweries-list {
+                padding-bottom: 20px
+            }
+
+            .breweries-filters {
+
+                .choose-title {
+                    @include text ('YatraOne-Regular', 30px); 
+                    text-align: center;
+                    color: $color-yellow-bright;
+                    padding-top: 20px;
+                    padding-bottom: 30px;
+                }
+            }
+
+            label {
+                @include text ('YatraOne-Regular', 20px); 
+                padding-right: 10px;
+                color: $color-yellow-bright;
+                
+                @include responsive (tablet) {
+                   padding-bottom: 10px;
+                }
+        
+                @include responsive (mobile) {
+                    padding-bottom: 10px;
+                }
+            }
+            
+            .drop-down-search {
+                text-align: center;
+            }
+
+            select, input {
+                width: 180px;
+                @include text ('YatraOne-Regular', 15px); 
+                margin-right: 40px;
+
+                    option {
+                        @include text ('YatraOne-Regular', 15px); 
+                    }
+                }
+                color: $color-white;
+        }
+
+        #breweries-wrapper {
+            display: flex;
+            justify-content: space-around;
+            gap: 50px;
+            flex-wrap: wrap;
+
+            .no-data {
+                font-size: 32px;
+                color: white;
+            }
+
+            .breweryItem {
+                background-image: url(../assets/partner.jpg);
+                background-size: contain;;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 10px 10px;
+                width: 280px;
+                height: 270px;
+                border-radius: 10%;
+                border: 3px solid rgb(188, 188, 24);
+
+                &>p {
+                    &:nth-of-type(1) {
+                        @include text ('Wix-Madefor-Regular', 13px); 
+                        text-align: right;
+                        color: $color-white;
+                        padding-bottom: 8px;
+
+                        @include responsive (tablet) {
+                            font-size: 20px;
+                        }
+                
+                        @include responsive (mobile) {
+                            font-size: 20px;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        @include text ('YatraOne-Regular', 20px); 
+                        text-align: center;
+                        color: $color-white;
+                        padding-bottom: 15px;
+                        font-weight: bold;
+
+                        @include responsive (tablet) {
+                            font-size: 25px;
+                        }
+                
+                        @include responsive (mobile) {
+                            font-size: 25px;
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+                        @include text ('Wix-Madefor-Regula', 15px); 
+                        text-align: left;
+                        color: $color-white;
+                        padding-bottom: 15px;
+
+                        &::before{
+                            padding-right: 10px;
+                            font-family: "Font Awesome 5 Free"; 
+                            font-size: 15px;
+                            font-weight: 600;
+                            color: $color-white;
+                            content: '\f0e0';
+                        }
+                    }
+                }
+
+                .address {
+                    p {
+                        &:nth-of-type(1) {
+                            @include text ('Wix-Madefor-Regula', 15px); 
+                            text-align: left;
+                            color: $color-white;
+                            padding-bottom: 15px;
+
+                            &::before{
+                                padding-right: 10px;
+                                font-family: "Font Awesome 5 Free"; 
+                                color: $color-white;
+                                font-size: 15px;
+                                font-weight: 600;
+                                content: '\f124';
+                            }
+
+                            @include responsive (tablet) {
+                                font-size: 20px;
+                            }
+                    
+                            @include responsive (mobile) {
+                                font-size: 20px;
+                            }
+                            
+                        }
+    
+                        &:nth-of-type(2) {
+                            @include text ('Wix-Madefor-Regula', 15px); 
+                            text-align: left;
+                            color: $color-white;
+                            padding-bottom: 15px;
+
+                            &::before{
+                                padding-right: 10px;
+                                font-family: "Font Awesome 5 Free"; 
+                                color: $color-white;
+                                font-size: 15px;
+                                font-weight: 600;
+                                content: '\f21d';
+                            }
+
+                            @include responsive (tablet) {
+                                font-size: 20px;
+                            }
+                    
+                            @include responsive (mobile) {
+                                font-size: 20px;
+                            }
+                        }
+
+                        &:nth-of-type(3) {
+                            @include text ('Wix-Madefor-Regula', 15px); 
+                            text-align: left;
+                            color: $color-white;
+                            padding-bottom: 15px;
+
+                            &::before{
+                                padding-right: 10px;
+                                font-family: "Font Awesome 5 Free"; 
+                                font-size: 15px;
+                                font-weight: 600;
+                                color: $color-white;
+                                content: '\f3c5';
+                            }
+
+                            @include responsive (tablet) {
+                                font-size: 20px;
+                            }
+                    
+                            @include responsive (mobile) {
+                                font-size: 20px;
+                            }
+                        }
+
+                        &:nth-of-type(4) {
+                            @include text ('Wix-Madefor-Regula', 15px); 
+                            text-align: left;
+                            color: $color-white;
+                            font-size: 15px;
+                            font-weight: 600;
+                            padding-bottom: 15px;
+
+                            &::before{
+                                padding-right: 10px;
+                                font-family: "Font Awesome 5 Free"; 
+                                color: $color-white;
+                                font-size: 15px;
+                                content: '\f879';
+                            } 
+
+                            @include responsive (tablet) {
+                            font-size: 20px;
+                        }
+                
+                        @include responsive (mobile) {
+                            font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        button {
+            background-color:  $color-yellow;
+            @include text('OpenSans', 18px);
+            color: $color-white;
+            width: 130px;
+            height: 40px;
+            margin-top: 25px;
+
+            @include responsive (tablet) {
+                width: 250px;
+                height: 50px;
+                font-size: 25px;
+            }
+    
+            @include responsive (mobile) {
+                width: 200px;
+                font-size: 23px;
+                margin: 0;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: $color-white;
+                color: $color-yellow-bright;
+            }
+        }
+
+        .show-more-button {
+            margin: 50px 45%;
+        }
+    }
+}

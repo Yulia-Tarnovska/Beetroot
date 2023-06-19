@@ -21,11 +21,7 @@
   }
   
   
-  @mixin text ($font-family, $font-style, $font-weight, $font-size, $line-height, $letter-spacing) {
+  @mixin text ($font-family, $font-size) {
       font-family: $font-family; 
-      font-style: $font-style;
-      font-weight: $font-weight;
       font-size: $font-size;
-      line-height: $line-height;
-      letter-spacing: $letter-spacing;
   }

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Wix-Madefor-Regular";
+  src: url(./Wix_Madefor_Display/WixMadeforDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: "Wix-Madefor-Medium";
+  src: url(./Wix_Madefor_Display/WixMadeforDisplay-Medium.ttf);
+}
+@font-face {
+  font-family: "Wix-Madefor-SemiBold";
+  src: url(./Wix_Madefor_Display/WixMadeforDisplay-SemiBold.ttf);
+}
+@font-face {
+  font-family: "ArchitectsDaughter-Regular";
+  src: url(./Architects_Daughter/ArchitectsDaughter-Regular.ttf);
+}
+@font-face {
+  font-family: "YatraOne-Regular";
+  src: url(./Yatra_One/YatraOne-Regular.ttf);
+}

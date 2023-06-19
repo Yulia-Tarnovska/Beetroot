@@ -1,0 +1,73 @@
+@import '../fonts/fonts.css';
+@import './mixins.scss';
+@import './variables.scss';
+@import './header.scss';
+@import './footer.scss';
+ 
+
+.wrapper {
+    background-color: $color-dark-blue;
+    padding: 50px;
+    
+    .gallery-wrapper {
+        
+        #img-gallery img.zoomed {
+            transform: scale(1.5);
+        }
+        h1 {
+            color: $color-white;
+            text-transform: uppercase;
+            @include text ('YatraOne-Regular', 35px);
+            text-align: center;
+            padding-top: 80px;
+            padding-bottom: 50px;
+        }
+
+        .gallery-images {
+            padding-bottom: 60px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+            @media (max-width: 1300px) {
+                display: block;
+            }
+            
+            .gallery-image-wrapper {
+                position: relative;
+                display: inline-block;
+                width: auto;
+                height: auto;
+                opacity: 1;
+                transition: opacity 0.5s ease-in-out;
+
+                img {
+                    transform: scaleZ(1);
+                    position: relative;
+                    max-width: 400px;
+                    height: auto;
+    
+                    &.zoomed {
+                        transform: scale(1.5);
+                    }
+                }
+
+                i {
+                    display: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    color: $color-white;
+                    transform: translate(-50%, -50%);
+                }
+
+                &:hover {
+                    i {
+                        display: block;
+                    }
+                }
+            }
+
+        }
+    }
+}

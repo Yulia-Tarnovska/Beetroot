@@ -1,0 +1,247 @@
+@import '../fonts/fonts.css';
+.footer-wrapper {
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 70px;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .footer-wrapper {
+    display: block;
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .footer-wrapper {
+    display: block;
+    padding-top: 20px;
+  }
+}
+.footer-wrapper .footer-section h2 {
+  font-family: "OpenSans";
+  font-size: 18px;
+  color: rgb(225, 225, 58);
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .footer-wrapper .footer-section h2 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .footer-wrapper .footer-section h2 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+}
+.footer-wrapper .footer-section .map-wrapper {
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+.footer-wrapper .footer-section .map-wrapper #marker {
+  width: 106px;
+  height: 106px;
+}
+.footer-wrapper .footer-section p {
+  font-family: "YatraOne-Regular";
+  font-size: 16px;
+  color: white;
+}
+.footer-wrapper .footer-section p:nth-of-type(3) {
+  padding-top: 25px;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .footer-wrapper .footer-section p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .footer-wrapper .footer-section p {
+    font-size: 20px;
+  }
+}
+
+.message-wrapper .m-screen {
+  max-width: 450px;
+  height: auto;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .message-wrapper .m-screen {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .message-wrapper .m-screen {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+}
+.message-wrapper .m-screen .m-title {
+  font-family: "ArchitectsDaughter-Regular";
+  color: rgb(21, 18, 32);
+}
+.message-wrapper #leave-message input {
+  width: 415px;
+  height: auto;
+  margin-bottom: 10px;
+  font-family: "ArchitectsDaughter-Regular";
+  font-size: 15px;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .message-wrapper #leave-message input {
+    font-size: 20px;
+    max-width: 290px;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .message-wrapper #leave-message input {
+    font-size: 20px;
+    max-width: 280px;
+  }
+}
+.message-wrapper #leave-message #message {
+  width: 415px;
+  height: 100px;
+  resize: none;
+  overflow: auto;
+  margin-top: 3px;
+  font-family: "ArchitectsDaughter-Regular";
+  font-size: 15px;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .message-wrapper #leave-message #message {
+    font-size: 20px;
+    max-width: 290px;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .message-wrapper #leave-message #message {
+    font-size: 20px;
+    max-width: 280px;
+  }
+}
+.message-wrapper .m-close-send button:nth-of-type(1) {
+  background-color: white;
+  font-family: "ArchitectsDaughter-Regular";
+  font-size: 15px;
+  color: rgb(21, 18, 32);
+}
+.message-wrapper .m-close-send button:nth-of-type(1):hover {
+  background-color: rgb(21, 18, 32);
+  color: white;
+}
+.message-wrapper .m-close-send button:nth-of-type(2) {
+  background-color: rgb(21, 18, 32);
+  font-family: "ArchitectsDaughter-Regular";
+  font-size: 15px;
+  color: white;
+}
+.message-wrapper .m-close-send button:nth-of-type(2):hover {
+  background-color: white;
+  color: rgb(21, 18, 32);
+}
+.message-wrapper #message-button {
+  position: fixed;
+  background-color: rgb(188, 188, 24);
+  font-family: "ArchitectsDaughter-Regular";
+  font-size: 20px;
+  color: white;
+  width: 195px;
+  height: 55px;
+  top: 90%;
+  right: 5%;
+  z-index: 9;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .message-wrapper #message-button {
+    width: 230px;
+    height: 45px;
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .message-wrapper #message-button {
+    width: 230px;
+    height: 45px;
+    font-size: 25px;
+  }
+}
+.message-wrapper #message-button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(188, 188, 24);
+}
+.message-wrapper .sent .m-send button {
+  background-color: white;
+  font-family: "ArchitectsDaughter-Regular";
+  font-size: 15px;
+  color: rgb(21, 18, 32);
+}
+.message-wrapper .sent .m-send button:hover {
+  background-color: rgb(21, 18, 32);
+  color: white;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .message-wrapper .sent .m-send button {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .message-wrapper .sent .m-send button {
+    font-size: 25px;
+  }
+}
+.message-wrapper .sent h1 {
+  font-family: "ArchitectsDaughter-Regular";
+  font-size: 40px;
+  color: rgb(21, 18, 32);
+  text-align: center;
+}
+
+.footer-bottom .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .footer-bottom .socials {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .footer-bottom .socials {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.footer-bottom .socials img:hover {
+  background-color: rgb(225, 225, 58);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.footer-bottom p {
+  font-family: "YatraOne-Regular";
+  font-size: 16px;
+  color: white;
+  padding-top: 15px;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .footer-bottom p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .footer-bottom p {
+    font-size: 20px;
+  }
+}

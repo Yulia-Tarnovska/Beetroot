@@ -1,0 +1,265 @@
+@import '../fonts/fonts.css';
+.header-wrapper {
+  position: relative;
+  z-index: 1;
+}
+.header-wrapper .border {
+  max-width: 400px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 0 auto;
+  padding: 10px;
+}
+.header-wrapper .border .top-title {
+  max-width: 350px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 0 auto;
+}
+.header-wrapper .border .top-title h1 {
+  color: white;
+  font-family: "Wix-Madefor-SemiBold";
+  font-size: 70px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header-wrapper .title-text p {
+  color: white;
+  font-family: "YatraOne-Regular";
+  font-size: 23px;
+  text-align: center;
+  padding-top: 10px;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .header-wrapper .title-text p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .header-wrapper .title-text p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.header-wrapper #menu-top {
+  position: absolute;
+  width: 180px;
+  right: 0;
+  top: 0;
+  text-align: center;
+  z-index: 2;
+}
+@media only screen and (min-width: 769px) {
+  .header-wrapper #menu-top {
+    display: none;
+  }
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .header-wrapper #menu-top {
+    padding-top: 0;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .header-wrapper #menu-top {
+    padding-top: 0;
+  }
+}
+.header-wrapper .menu-bg,
+.header-wrapper menu {
+  position: relative;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .header-wrapper .menu {
+    padding-top: 35px;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .header-wrapper .menu {
+    padding-top: 35px;
+  }
+}
+.header-wrapper #menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 10px 11px -17px 140px;
+  cursor: pointer;
+  position: relative;
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .header-wrapper #menu-bar {
+    margin: 5px 0 15px 120px;
+  }
+}
+.header-wrapper .bar {
+  height: 1px;
+  width: 25px;
+  background-color: white;
+  display: block;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.header-wrapper #bar1 {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+.header-wrapper #bar3 {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+.header-wrapper .nav {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: none;
+  background-color: rgb(21, 18, 32);
+  border: 3px solid white;
+}
+.header-wrapper .nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+.header-wrapper .nav li a {
+  color: white;
+  font-family: "ArchitectsDaughter-Regular";
+  font-size: 20px;
+  text-decoration: none;
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .header-wrapper .nav li a {
+    font-size: 16px;
+  }
+}
+.header-wrapper .nav li a:hover {
+  font-weight: bold;
+  color: rgb(225, 225, 58);
+  cursor: pointer;
+}
+.header-wrapper .nav li a.active {
+  color: rgb(225, 225, 58);
+}
+.header-wrapper .menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, white, rgb(188, 188, 24));
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.header-wrapper .change {
+  display: block;
+}
+.header-wrapper .change .bar {
+  background-color: white;
+}
+.header-wrapper .change #bar1 {
+  -webkit-transform: translateY(-7px) rotateZ(-45deg);
+          transform: translateY(-7px) rotateZ(-45deg);
+}
+.header-wrapper .change #bar2 {
+  opacity: 0;
+}
+.header-wrapper .change #bar3 {
+  -webkit-transform: translateY(-9px) rotateZ(45deg);
+          transform: translateY(-9px) rotateZ(45deg);
+}
+.header-wrapper .change-bg {
+  width: 520px;
+  height: 460px;
+  -webkit-transform: translate(71%, -15%);
+          transform: translate(71%, -15%);
+}
+.header-wrapper .menu ul {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .header-wrapper .menu ul {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .header-wrapper .menu ul {
+    display: none;
+  }
+}
+.header-wrapper .menu li a {
+  padding-top: 13px;
+  font-family: "YatraOne-Regular";
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .header-wrapper .menu li a {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.header-wrapper .menu li a:hover {
+  cursor: pointer;
+  color: rgb(225, 225, 58);
+  border-top: 3px solid rgb(225, 225, 58);
+}
+.header-wrapper .menu li a:active {
+  border-top: 3px solid rgb(225, 225, 58);
+}
+.header-wrapper .menu li a.active {
+  color: rgb(225, 225, 58);
+}
+.header-wrapper .carousel {
+  padding-bottom: 70px;
+}
+.header-wrapper .carousel .carousel-indicators {
+  gap: 40px;
+}
+.header-wrapper .carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.header-wrapper .carousel .carousel-indicators button.active {
+  background-color: white;
+}
+.header-wrapper .header-items-wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  padding-top: 90px;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .header-wrapper .header-items-wrapper {
+    display: block;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .header-wrapper .header-items-wrapper {
+    display: block;
+  }
+}
+.header-wrapper .header-items-wrapper .header-item {
+  background-color: white;
+}
+.header-wrapper .header-items-wrapper .header-item img {
+  max-width: auto;
+  max-height: 500px;
+}
