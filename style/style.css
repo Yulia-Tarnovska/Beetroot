@@ -941,12 +941,12 @@
 }
 @media only screen and (max-width: 769px) and (min-width: 321px) {
   .wrapper .pub-options .pub-option-item p:first-of-type {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 @media only screen and (max-width: 320px) and (min-width: 100px) {
   .wrapper .pub-options .pub-option-item p:first-of-type {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .wrapper .pub-options .pub-option-item p:nth-of-type(2) {
@@ -961,17 +961,29 @@
   .wrapper .pub-options .pub-option-item p:nth-of-type(2) {
     font-size: 22px;
     line-height: 22px;
+    width: 200px;
   }
 }
 @media only screen and (max-width: 320px) and (min-width: 100px) {
   .wrapper .pub-options .pub-option-item p:nth-of-type(2) {
     font-size: 22px;
     line-height: 22px;
+    width: 200px;
   }
 }
 .wrapper .pub-options .pub-option-item img {
   max-width: 250px;
   max-height: 150px;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .wrapper .pub-options .pub-option-item img {
+    max-width: 200px;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .wrapper .pub-options .pub-option-item img {
+    max-width: 200px;
+  }
 }
 .wrapper .pub-options .pub-option-item a {
   font-family: "ArchitectsDaughter-Regular";

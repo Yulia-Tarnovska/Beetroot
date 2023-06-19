@@ -121,11 +121,11 @@ padding: 50px;
                 color:$color-white; 
 
                 @include responsive (tablet) {
-                    font-size: 30px;
+                    font-size: 25px;
                 }
         
                 @include responsive (mobile) {
-                    font-size: 30px
+                    font-size: 25px
                 }
             }
 
@@ -139,12 +139,13 @@ padding: 50px;
                         @include responsive (tablet) {
                             font-size: 22px;
                             line-height: 22px;
-                            
+                            width: 200px;
                         }
                 
                         @include responsive (mobile) {
                             font-size: 22px;
                             line-height: 22px;
+                            width: 200px;
                         }
                     }
                 }
@@ -152,6 +153,13 @@ padding: 50px;
             img {
                 max-width: 250px;
                 max-height: 150px;
+                @include responsive (tablet) {
+                    max-width: 200px;
+                }
+        
+                @include responsive (mobile) {
+                    max-width: 200px;
+                }
             }
 
             a {

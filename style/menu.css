@@ -838,7 +838,6 @@
   }
 }
 .wrapper .menu-wrapper .menu-img {
-  width: 100%;
   height: auto;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -851,6 +850,16 @@
 }
 .wrapper .menu-wrapper .carousel {
   padding-bottom: 70px;
+}
+@media only screen and (max-width: 769px) and (min-width: 321px) {
+  .wrapper .menu-wrapper .carousel .carousel-item {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 100px) {
+  .wrapper .menu-wrapper .carousel .carousel-item {
+    width: auto;
+  }
 }
 .wrapper .menu-wrapper .carousel .carousel-indicators {
   gap: 40px;

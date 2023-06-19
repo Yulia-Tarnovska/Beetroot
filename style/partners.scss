@@ -7,16 +7,9 @@
 
 .wrapper {
     background-color: $color-dark-blue;
-    padding: 50px;
-    
-    @include responsive (tablet) {
-        padding: 20px;
-    }
+    padding: 60px 50px;
 
-    @include responsive (mobile) {
-        padding: 20px;
-    }
-    
+
     .partners-wrapper {
 
             h1 {

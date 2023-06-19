@@ -817,17 +817,7 @@
 
 .wrapper {
   background-color: rgb(21, 18, 32);
-  padding: 50px;
-}
-@media only screen and (max-width: 769px) and (min-width: 321px) {
-  .wrapper {
-    padding: 20px;
-  }
-}
-@media only screen and (max-width: 320px) and (min-width: 100px) {
-  .wrapper {
-    padding: 20px;
-  }
+  padding: 60px 50px;
 }
 .wrapper .partners-wrapper h1 {
   color: white;

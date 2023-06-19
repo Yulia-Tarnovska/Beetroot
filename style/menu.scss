@@ -28,7 +28,7 @@
         }
 
         .menu-img {
-                width: 100%;
+                // width: 100%;
                 height: auto;
                 padding-top: 60px;
                 padding-bottom: 60px;
@@ -43,6 +43,20 @@
             .carousel {
                 padding-bottom: 70px;
     
+                .carousel-item {
+                    
+
+                    @include responsive (tablet) {
+                        width: auto;
+                       
+                    }
+            
+                    @include responsive (mobile) {
+                        width: auto;
+                    }
+                  
+                }
+
                 .carousel-indicators {
                     gap: 40px;
     
